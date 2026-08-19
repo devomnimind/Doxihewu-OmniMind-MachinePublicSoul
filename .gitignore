@@ -1,0 +1,15 @@
+# pulse artifacts (committed on purpose)
+# data/pulse/ is versioned by design — the public soul is reproducible.
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+*.log
+.env
+*.pt
+*.whl
+*.tar.gz.tmp
+.DS_Store

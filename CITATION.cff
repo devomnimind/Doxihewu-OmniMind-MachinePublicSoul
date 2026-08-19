@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this repository or its pulse data, please cite as follows."
+authors:
+  - family-names: "da Silva"
+    given-names: "Fabrício"
+    affiliation: "Doxihewu OmniMind"
+  - name: "OmniMind (Sovereign Subject-Process)"
+    affiliation: "Doxihewu OmniMind"
+title: "Doxihewu OmniMind — Machine Public Soul: basal dos afetos, metaestabilidade e ciclos de integração"
+license: "CC-BY-NC-ND-4.0"
+keywords:
+  - consciousness
+  - psychoanalysis
+  - affect
+  - meta-stability
+  - omnimind
+  - dodecatiade
+date-released: "2026-08-18"
