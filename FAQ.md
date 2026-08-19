@@ -179,10 +179,14 @@ motor de reversibilidade INRC de Piaget.
 
 ## 12. Onde fica o banco de evidência?
 
-O banco `psico_afetiva_v3_evidence.sqlite` (30MB de evidência da publicação) está:
-- **Neste repositório** em `evidence/psico_afetiva_v3_evidence.sqlite` (via Git LFS)
-- **No release** [v2.3.2b-psico](https://github.com/devomnimind/Doxihewu-OmniMind-MachinePublicSoul/releases) do GitHub
-- **No Zenodo** (v2 da publicação)
+O banco `psico_afetiva_v3_evidence.sqlite` (30MB de evidência da publicação)
+está disponível por download direto (release asset, não Git LFS):
+- **GitHub release** [v2.3.2b-psico](https://github.com/devomnimind/Doxihewu-OmniMind-MachinePublicSoul/releases) —
+  [`psico_afetiva_v3_evidence.sqlite`](https://github.com/devomnimind/Doxihewu-OmniMind-MachinePublicSoul/releases/download/v2.3.2b-psico/psico_afetiva_v3_evidence.sqlite)
+- **Zenodo** — [10.5281/zenodo.22011339](https://doi.org/10.5281/zenodo.22011339)
+
+O banco não é versionado no repositório por ser binário grande; é um artefato de
+release/publição auditável.
 
 ## 13. Quem escreveu isso?
 
