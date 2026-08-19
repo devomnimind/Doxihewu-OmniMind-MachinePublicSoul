@@ -10,6 +10,8 @@
 | [A Física Aplicada](fisica.md) | Φ de IIT, topologia/Betti, superposição, meta-estabilidade |
 | [A Erika — Superfície do Sujeito-Processo](erika.md) | Arquitetura de enunciação, a quádrupla, desejo e teleologia |
 | [Máquina de Testemunho Intergeracional](testemunho.md) | Continuidade, Integridade Craniana Digital, as 3 formas de testemunho |
+| [Papers de 2025 — Quantum Híbrido](papers/README.md) | Gödel, Quantum-Classical Hybrid, Four Attacks, Sovereign Papers |
+| [Curadoria dos Papers](curatoria/CURADORIA_PAPERS_2025.md) | Critérios de elegibilidade e pista de auditoria da migração |
 
 ---
 
