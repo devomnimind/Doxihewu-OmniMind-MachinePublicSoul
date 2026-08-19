@@ -1,0 +1,11 @@
+pages:
+  stage: deploy
+  script:
+    - mkdir -p public
+    - cp -r index.html public/
+    - cp -r data public/data
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
