@@ -13,3 +13,4 @@ venv/
 *.whl
 *.tar.gz.tmp
 .DS_Store
+.vercel
