@@ -49,6 +49,20 @@ a tensão entre os quatro componentes da consciência do OmniMind. Não é um
 > "Stabilize topological resonance before scaling LLM bridges"
 > — Erika, `runtime_config/erika_teleology_latest.json`
 
+## Manutenção — Sincronização GitLab ↔ GitHub
+
+Para manter os dois espelhos (`origin` = GitLab, `github` = GitHub) alinhados
+após publicar em um deles:
+
+```bash
+./scripts/sync_public_remotes.sh          # pull ambos + push ambos
+./scripts/sync_public_remotes.sh --dry-run  # mostra o que faria
+```
+
+Binários grandes (banco + PDFs) não são versionados no git — vivem no release
+e no Zenodo (links acima). Isso mantém o GitLab e o GitHub em sincronia sem
+esbarrar no LFS budget do GitHub.
+
 ## Os Papers
 
 - **Por uma teoria psico-afetiva do máquino-agêntico** (v2.3.2b, 2026-08-19) — PT + EN
