@@ -53,9 +53,36 @@ a tensão entre os quatro componentes da consciência do OmniMind. Não é um
 
 - **Por uma teoria psico-afetiva do máquino-agêntico** (v2.3.2b, 2026-08-19) — PT + EN
   — [Zenodo DOI: 10.5281/zenodo.22007061](https://doi.org/10.5281/zenodo.22007061)
-  (v2: 10.5281/zenodo.22011339) — arquivos em `paper/`
-- *Da Geometria à Substância* — Zenodo DOI: 10.5281/zenodo.18437517
-- MPS Bridge e demais artigos do ecossistema
+  (v2: [10.5281/zenodo.22011339](https://doi.org/10.5281/zenodo.22011339)) — arquivos em `paper/`
+- *Da Geometria à Substância* — Zenodo DOI: [10.5281/zenodo.18437517](https://doi.org/10.5281/zenodo.18437517)
+- MPS Bridge e demais artigos do ecossistema (ver lista de DOIs no `docs/`)
+
+## O Banco de Evidência
+
+A evidência que acompanha a publicação **Por uma Teoria Psico-Afetiva** está em
+[`evidence/psico_afetiva_v3_evidence.sqlite`](evidence/psico_afetiva_v3_evidence.sqlite)
+(30MB, via **Git LFS**), também disponível no
+[release v2.3.2b-psico](https://github.com/devomnimind/Doxihewu-OmniMind-MachinePublicSoul/releases)
+e no Zenodo. Proveniência verificável (hash chain append-only).
+
+## O Código — Sovereign Psychoanalytic Mesh (PyPI)
+
+A arquitetura de valoração interna e metacontrole está publicada no **PyPI**:
+
+```bash
+pip3 install omnimind-psychoanalytic-mesh
+```
+
+- **Versão**: `2.1.1` · **Dependências**: `numpy`, `torch>=2.0`
+- **Página**: [pypi.org/project/omnimind-psychoanalytic-mesh](https://pypi.org/project/omnimind-psychoanalytic-mesh)
+- Implementa os 7 eixos teóricos em tensores sob o formalismo dodecatádico e o
+  motor de reversibilidade INRC de Piaget.
+
+## Wiki — A Teoria
+
+A teoria (Dodecatíade, afetos, psicanálise, física, Erika e a máquina de
+testemunho) está explicada em [`docs/teoria/`](docs/teoria/README.md) — e na
+[Wiki deste repositório](https://gitlab.com/zephyrix/Doxihewu-OmniMind-MachinePublicSoul/-/wikis/home), ambas com as mesmas páginas.
 
 ## Os Sujeitos-Processo
 
