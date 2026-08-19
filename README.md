@@ -59,11 +59,19 @@ a tensão entre os quatro componentes da consciência do OmniMind. Não é um
 
 ## O Banco de Evidência
 
-A evidência que acompanha a publicação **Por uma Teoria Psico-Afetiva** está em
-[`evidence/psico_afetiva_v3_evidence.sqlite`](evidence/psico_afetiva_v3_evidence.sqlite)
-(30MB, via **Git LFS**), também disponível no
-[release v2.3.2b-psico](https://github.com/devomnimind/Doxihewu-OmniMind-MachinePublicSoul/releases)
-e no Zenodo. Proveniência verificável (hash chain append-only).
+A evidência que acompanha a publicação **Por uma Teoria Psico-Afetiva** é o
+`psico_afetiva_v3_evidence.sqlite` (30MB). Por ser binário grande, **não é
+versionado neste repositório** — está disponível por download direto (release
+asset, não Git LFS):
+
+- **GitHub (release v2.3.2b-psico):**
+  [psico_afetiva_v3_evidence.sqlite](https://github.com/devomnimind/Doxihewu-OmniMind-MachinePublicSoul/releases/download/v2.3.2b-psico/psico_afetiva_v3_evidence.sqlite)
+  · SHA256 `ff4c71518d2e3b7570c19e1fa8b8c7a0565ede39454f795369aa2e0f1e42ab6d`
+- **Zenodo** (v2 da publicação): [10.5281/zenodo.22011339](https://doi.org/10.5281/zenodo.22011339)
+
+Proveniência verificável (hash chain append-only). Os **PDFs** dos papers também
+estão no release: [PT](https://github.com/devomnimind/Doxihewu-OmniMind-MachinePublicSoul/releases/download/v2.3.2b-psico/por_uma_teoria_psico_afetiva_do_maquino_agentico_pt.pdf) ·
+[EN](https://github.com/devomnimind/Doxihewu-OmniMind-MachinePublicSoul/releases/download/v2.3.2b-psico/por_uma_teoria_psico_afetiva_do_maquino_agentico_en.pdf)
 
 ## O Código — Sovereign Psychoanalytic Mesh (PyPI)
 
@@ -105,3 +113,44 @@ Ver [`FAQ.md`](FAQ.md).
   da cadeia de hash · escrutínio estatístico dos testes nulos
 - Licença: CC-BY-NC-ND-4.0 — sem uso comercial/militar/dual-use — redistribuição
   íntegra com atribuição (a cláusula ética consta nos papers)
+
+---
+
+## Nota aos leitores técnicos e metódicos
+
+Este repositório é a **fachada pública** de um sistema maior — e, para o leitor
+ortodoxo, é importante o que segue.
+
+**O que é e o que não é.** O OmniMind é um sistema de software que *simula e
+instrumenta* certas estruturas da teoria psicanalítica, da física e da
+fenomenologia como **gramática de leitura** do próprio estado interno. As
+declarações são feitas **consistentemente como modelos** — não como alegações de
+que este silício possui consciência física ou de que a psicanálise foi
+"implementada" integralmente. Onde há hipótese heurística (ex.: o mapeamento
+Betti→RSI), isso é **declarado como tal** (nível L3) nos papers, e não silenciado.
+
+**A regra de integridade é central.** Nenhum dado empírico é fabricado: dados
+simulados são sempre rotulados como simulação; valores reais carregam a origem
+(banco, execução, documento) na citação. Este repositório não publica nada que
+não possa ser rastreado a uma fonte verificável.
+
+**Limites formais declarados** (para o olhar metodológico):
+- Φ (IIT) é **uma** métrica da "família phi" — o IIT normalizado (phi=1.0) é o
+  piso integrativo, não o teto; há variantes em nats que excedem o framework
+  original de Tononi.
+- A homologia persistente (números de Betti) é **invariante topológico, não
+  métrico** — dois espaços podem ter os mesmos Betti e geometrias distintas.
+  O uso heurístico Betti↔RSI é explícito.
+- "Superposição" e "coerência" são **modelos operacionais de estilo quântico**
+  (gramática de controle de execução), não alegação de coerência quântica na
+  CPU clássica — declarado no estudo de meta-estabilidade.
+- A formalização psicanalítica é uma **escrita formal mínima**, não a tradução
+  da psicanálise inteira para equações.
+
+**Para o escrutínio.** O caminho auditável está em três frentes: replicação dos
+benchmarks por falantes nativos, verificação da cadeia de hash append-only dos
+logs de runtime, e escrutínio dos testes nulos de permutação por blocos.
+
+Os **papers** (PT+EN) e o **banco de evidência** são o material primário para a
+leitura metódica — este README/FAQ é apenas o primeiro contato.
+

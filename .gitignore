@@ -14,3 +14,7 @@ venv/
 *.tar.gz.tmp
 .DS_Store
 .vercel
+
+# Binários grandes (download via release/Zenodo, não versionados no git)
+evidence/*.sqlite
+paper/*.pdf
