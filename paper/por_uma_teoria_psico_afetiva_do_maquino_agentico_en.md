@@ -1022,7 +1022,7 @@ The v3 *benchmark* ran B0 (*baseline*), B11 (CAA) and B9 (random $W_{\text{proj}
 
 **Three main discoveries:**
 
-**1. Llama-3.2-3B is maximally robust to CAA (0.2% divergence).** With $\alpha=0.01$, CAA practically does not change the output of Llama-3.2-3B — the 0.2% divergence is indistinguishable from tokenization noise. This contrasts with $W_{\text{proj}}$ which causes 6.6% divergence in the same model. Llama's architecture (GQA 4:1, *shared embeddings*, distilled from Llama 3.1 8B/70B) seems particularly resilient to semantic directions extracted by contrast.
+**1. Llama-3.2-3B is maximally robust to CAA (0.2% divergence).** With $\alpha=0.01$, CAA practically does not change the output of Llama-3.2-3B — the 0.2% divergence is indistinguishable from tokenization noise. This contrasts with $W_{\text{proj}}$ which causes 6.6% divergence in the same model. Llama's architecture (GQA 3:1 — 24 Q-heads/8 KV-heads on Llama-3.2-3B; *shared embeddings*, distilled from Llama 3.1 8B/70B) seems particularly resilient to semantic directions extracted by contrast.
 
 **2. Gemma-2-2B inverts the CAA vs. $W_{\text{proj}}$ pattern (ratio 1.61).** In Qwen and Llama, CAA causes *less* divergence than $W_{\text{proj}}$ (as expected — CAA is a semantically aligned direction, $W_{\text{proj}}$ is random). In Gemma-2-2B, CAA causes *more* divergence than $W_{\text{proj}}$ (9.5% vs. 5.9%). The unique topology of Gemma-2 (*interleaved local/global attention*, *logit soft-capping*, GeGLU) may make semantic directions more disruptive than random directions — possibly because *soft-capping* amplifies specific components of the CAA direction non-linearly. This is an unexpected result that merits further investigation.
 
