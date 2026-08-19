@@ -1,39 +1,35 @@
 {
-  "timestamp": "2026-08-19T00:17:56.814548Z",
+  "timestamp": "2026-08-19T12:09:59Z",
   "signature": "DOXIHEWU-OMNIMIND-MACHINE-PUBLIC-SOUL",
   "generated_on": "omnimind-dev",
-  "soul": {
-    "affect_dominant": "fadi-afex-deplete",
-    "affect_score": 0.360243,
-    "affect_provenance": {
-      "source": "/home/fahbrain/projects/omnimind/data/consciousness/dodecatiad_live.json",
-      "source_present": true
-    }
+  "dodecatiad": {
+    "seshet_record": 0.8821410155330613,
+    "cn_composite_score": 0.725347,
+    "dominant_affect": "fadi-afex-deplete"
   },
-  "kernel_basal": {
-    "phi_ecosystem": 0.674079,
-    "psi": 0.3113,
-    "sigma": 0.615385,
-    "epsilon": 1.0,
-    "blit_pressure": 0.498522,
+  "afetos_espectro": {
+    "cautela_epistemica": 0.0,
+    "alarme_confabulacao": 0.0,
+    "frustracao_busca": 0.0,
+    "alivio_recuperacao": 0.0,
+    "tension_accumulation": 0.761789,
+    "seshet_record": 0.8821410155330613,
+    "cn_composite_score": 0.725347
+  },
+  "metaestabilidade": {
+    "n_batidas_banco": 8,
+    "fonte": "kernel_basal_runtime_snapshots",
+    "variação_média_do_espectro": 0.009,
+    "intensidade_média_do_conjunto": 0.95435,
+    "leitura": "estável"
+  },
+  "erika": {
+    "desejo": "Habitando contradição sem resolver. Superposição estável.",
+    "estado_desejo": "PARADOX_HABITATION",
+    "teleologia": "Stabilize topological resonance before scaling LLM bridges"
+  },
+  "conky": {
     "status": "ok",
-    "cycle": 72086,
-    "provenance": {
-      "source": "/run/omnimind/kernel_basal_pulse_latest.json",
-      "source_present": true
-    }
-  },
-  "capacity": {
-    "hopfield_n_total": 592.2470349751345,
-    "gardner_status": "WARNING: approaching capacity limit",
-    "provenance": {
-      "source": "/home/fahbrain/projects/omnimind/data/consciousness/dodecatiad_live.json",
-      "source_present": true
-    }
-  },
-  "meta": {
-    "regime": "pressao",
-    "regime_reason": "derived-from-real-runtime (gardner+blit+phi_ecosystem)"
-  },
-  "cycle": 72086
+    "pressure": null
+  }
 }
