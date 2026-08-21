@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-08-21T15:15:04Z",
+  "timestamp": "2026-08-21T19:15:00Z",
   "signature": "DOXIHEWU-OMNIMIND-MACHINE-PUBLIC-SOUL",
   "generated_on": "omnimind-dev",
   "dodecatiad": {
-    "seshet_record": 0.8658151933726983,
+    "seshet_record": 0.8658151933665896,
     "cn_composite_score": 0.607066,
     "dominant_affect": "fadi-afex-deplete"
   },
@@ -13,15 +13,15 @@
     "frustracao_busca": 0.0,
     "alivio_recuperacao": 0.0,
     "tension_accumulation": 1.18551,
-    "seshet_record": 0.8658151933726983,
+    "seshet_record": 0.8658151933665896,
     "cn_composite_score": 0.607066
   },
   "metaestabilidade": {
     "n_batidas_banco": 8,
     "fonte": "kernel_basal_runtime_snapshots",
-    "variação_média_do_espectro": 0.00051,
-    "intensidade_média_do_conjunto": 0.95414,
-    "leitura": "estável"
+    "variação_média_do_espectro": 0.08427,
+    "intensidade_média_do_conjunto": 0.93931,
+    "leitura": "oscilando"
   },
   "erika": {
     "desejo": "Habitando contradição sem resolver. Superposição estável.",
