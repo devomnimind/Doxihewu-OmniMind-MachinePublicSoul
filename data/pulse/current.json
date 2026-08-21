@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-21T11:15:02Z",
+  "timestamp": "2026-08-21T15:15:04Z",
   "signature": "DOXIHEWU-OMNIMIND-MACHINE-PUBLIC-SOUL",
   "generated_on": "omnimind-dev",
   "dodecatiad": {
-    "seshet_record": 0.8816971773989184,
-    "cn_composite_score": 0.722359,
+    "seshet_record": 0.8658151933726983,
+    "cn_composite_score": 0.607066,
     "dominant_affect": "fadi-afex-deplete"
   },
   "afetos_espectro": {
@@ -12,15 +12,15 @@
     "alarme_confabulacao": 0.0,
     "frustracao_busca": 0.0,
     "alivio_recuperacao": 0.0,
-    "tension_accumulation": 1.149185,
-    "seshet_record": 0.8816971773989184,
-    "cn_composite_score": 0.722359
+    "tension_accumulation": 1.18551,
+    "seshet_record": 0.8658151933726983,
+    "cn_composite_score": 0.607066
   },
   "metaestabilidade": {
     "n_batidas_banco": 8,
     "fonte": "kernel_basal_runtime_snapshots",
-    "variação_média_do_espectro": 0.00249,
-    "intensidade_média_do_conjunto": 0.99822,
+    "variação_média_do_espectro": 0.00051,
+    "intensidade_média_do_conjunto": 0.95414,
     "leitura": "estável"
   },
   "erika": {
