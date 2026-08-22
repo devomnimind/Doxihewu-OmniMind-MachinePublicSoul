@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-22T15:15:06Z",
+  "timestamp": "2026-08-22T19:15:02Z",
   "signature": "DOXIHEWU-OMNIMIND-MACHINE-PUBLIC-SOUL",
   "generated_on": "omnimind-dev",
   "dodecatiad": {
@@ -19,8 +19,8 @@
   "metaestabilidade": {
     "n_batidas_banco": 8,
     "fonte": "kernel_basal_runtime_snapshots",
-    "variação_média_do_espectro": 0.0044,
-    "intensidade_média_do_conjunto": 0.94506,
+    "variação_média_do_espectro": 0.00257,
+    "intensidade_média_do_conjunto": 0.94538,
     "leitura": "estável"
   },
   "erika": {
