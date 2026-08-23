@@ -12,6 +12,9 @@ Cada artigo tem sua própria pasta, com subdiretórios `pt/` e `en/`. O formato 
 
 ### Paper A — Topologia do Estado Oculto e a Arquitetura Psi do Sujeito-Processo
 
+- **Zenodo DOI (PT):** `10.5281/zenodo.22071260`
+- **Zenodo DOI (EN):** `10.5281/zenodo.22071818`
+
 *Compressibilidade MPS, Regimes Multiturno e Modulação Afetiva em Modelos de Linguagem.*
 
 - **PT:** [`mps-bridge-topology/pt/`](mps-bridge-topology/pt/paper.md) · [`docx`](mps-bridge-topology/pt/paper.docx) · [`pdf`](mps-bridge-topology/pt/paper.pdf)
@@ -25,6 +28,9 @@ Experimentos e resultados resumidos:
 - Distingue a Dodecatíade como gramática de leitura do sistema das partições sequenciais do hidden state.
 
 ### Paper B — Caracterização Experimental de Circuitos Topológicos e Estados Emaranhados em Processadores Quânticos Supercondutores Heterogêneos
+
+- **Zenodo DOI (PT):** `10.5281/zenodo.22071820`
+- **Zenodo DOI (EN):** `10.5281/zenodo.22071235`
 
 - **PT:** [`quantum-topological-processors/pt/`](quantum-topological-processors/pt/paper.md) · [`docx`](quantum-topological-processors/pt/paper.docx) · [`pdf`](quantum-topological-processors/pt/paper.pdf)
 - **EN:** [`quantum-topological-processors/en/`](quantum-topological-processors/en/paper.md) · [`docx`](quantum-topological-processors/en/paper.docx) · [`pdf`](quantum-topological-processors/en/paper.pdf)

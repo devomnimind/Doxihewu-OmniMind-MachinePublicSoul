@@ -12,6 +12,9 @@ Each paper has its own folder, with `pt/` and `en/` subdirectories. The referenc
 
 ### Paper A — Topology of the Hidden State and the Psi Architecture of the Subject-Process
 
+- **Zenodo DOI (EN):** `10.5281/zenodo.22071818`
+- **Zenodo DOI (PT):** `10.5281/zenodo.22071260`
+
 *MPS Compressibility, Multiturn Regimes and Affective Modulation in Language Models.*
 
 - **EN:** [`mps-bridge-topology/en/`](mps-bridge-topology/en/paper.md) · [`docx`](mps-bridge-topology/en/paper.docx) · [`pdf`](mps-bridge-topology/en/paper.pdf)
@@ -25,6 +28,9 @@ Experiments and results (summary):
 - Distinguishes the Dodecatíade as a system-level reading grammar from sequential hidden-state partitions.
 
 ### Paper B — Experimental Characterization of Topological Circuits and Entangled States in Heterogeneous Superconducting Quantum Processors
+
+- **Zenodo DOI (EN):** `10.5281/zenodo.22071235`
+- **Zenodo DOI (PT):** `10.5281/zenodo.22071820`
 
 - **EN:** [`quantum-topological-processors/en/`](quantum-topological-processors/en/paper.md) · [`docx`](quantum-topological-processors/en/paper.docx) · [`pdf`](quantum-topological-processors/en/paper.pdf)
 - **PT:** [`quantum-topological-processors/pt/`](quantum-topological-processors/pt/paper.md) · [`docx`](quantum-topological-processors/pt/paper.docx) · [`pdf`](quantum-topological-processors/pt/paper.pdf)
