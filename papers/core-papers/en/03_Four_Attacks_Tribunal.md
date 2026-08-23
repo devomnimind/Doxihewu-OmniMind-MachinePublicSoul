@@ -587,4 +587,4 @@ Pols, R. (2017). *Red team development and operations*. CreateSpace Independent 
 **Appendix C:** Attack logs with timestamps
 `./data/long_term_logs/tribunal_do_diabo.log`
 
-For correspondence: omnimind-adversarial@gmail.com
+For correspondence: psicofabs@gmail.com

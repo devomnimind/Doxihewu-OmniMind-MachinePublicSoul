@@ -640,7 +640,7 @@ Tegmark, M. (2000). Importance of quantum decoherence in brain processes. *Physi
 **Appendix C:** Coverage report `./reports/quantum_coverage_97percent.html`
 
 
-For correspondence: omnimind-quantum@gmail.com
+For correspondence: psicofabs@gmail.com
 
 ---
 

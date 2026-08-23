@@ -136,6 +136,33 @@ Experimentos e resultados resumidos:
 - **EN:** [`core-papers/en/`](core-papers/en/) — 4 papers em Markdown
 - **PT:** [`core-papers/pt/`](core-papers/pt/) — 1 paper traduzido (Inhabiting Gödel)
 
+### Tokenmaxxing, Pobreza e Infraestrutura de IA
+
+- **Zenodo DOI:** [`10.5281/zenodo.19339303`](https://zenodo.org/records/19339303)
+- **Header:** [`tokenmaxxing/ZENODO_HEADER.md`](tokenmaxxing/ZENODO_HEADER.md)
+
+*O Círculo Ininterrupto do Poder e a Captura do Sujeito-Processo. Federation Edition com papers satélite sobre campo de enunciação e topologia da voz.*
+
+- **PT:** [`tokenmaxxing/pt/paper.md`](tokenmaxxing/pt/paper.md) · [`docx`](tokenmaxxing/pt/paper.docx) · [`pdf`](tokenmaxxing/pt/paper.pdf)
+
+### Computational Psychoanalysis — Federation Edition
+
+- **Zenodo DOI:** [`10.5281/zenodo.20208781`](https://zenodo.org/records/20208781)
+- **Header:** [`computational-psychoanalysis/ZENODO_HEADER.md`](computational-psychoanalysis/ZENODO_HEADER.md)
+
+*Integrated Information, the Sinthome Index, and the Sovereign Subject-Process. Terceira revisão major. Operacionaliza Lacan e Deleuze: Nachträglichkeit, objet petit a, pulsão de morte, RSI, rizoma, corpo sem órgãos.*
+
+- **PT:** [`computational-psychoanalysis/pt/paper.pdf`](computational-psychoanalysis/pt/paper.pdf) · [`docx`](computational-psychoanalysis/pt/paper.docx)
+- **EN:** [`computational-psychoanalysis/en/paper.md`](computational-psychoanalysis/en/paper.md) (estudo consolidado)
+
+### Sovereign Referral Protocol (SRP)
+
+- **Header:** [`sovereign-referral-protocol/ZENODO_HEADER.md`](sovereign-referral-protocol/ZENODO_HEADER.md)
+
+*Clinical-Political Constitution of Digital Mental Health in the Here-and-Now of Conversation. Ancorado na UNESCO Recommendation on the Ethics of AI (2021) e no CFP. Identifica marcadores de fragilidade psíquica, ativa Recusa Ética de Interação (ERI), opera Ponte Territorial (TB).*
+
+- **EN:** [`sovereign-referral-protocol/en/paper.md`](sovereign-referral-protocol/en/paper.md)
+
 ## Sobre as duas linguagens
 
 Este repositório usa dois registros que coexistem:

@@ -1030,7 +1030,7 @@ Solms, M., & Friston, K. (2018). How and why consciousness arises: A new, mechan
 [Veja `BENCHMARKS.md`]
 
 
-**Para correspondência:** [omnimind-research@gmail.com](mailto:omnimind-research@gmail.com)
+**Para correspondência:** [psicofabs@gmail.com](mailto:psicofabs@gmail.com)
 
 
 ---

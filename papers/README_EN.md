@@ -136,6 +136,33 @@ Experiments and results (summary):
 - **EN:** [`core-papers/en/`](core-papers/en/) — 4 papers in Markdown
 - **PT:** [`core-papers/pt/`](core-papers/pt/) — 1 translated paper (Inhabiting Gödel)
 
+### Tokenmaxxing, Poverty, and AI Infrastructure
+
+- **Zenodo DOI:** [`10.5281/zenodo.19339303`](https://zenodo.org/records/19339303)
+- **Header:** [`tokenmaxxing/ZENODO_HEADER.md`](tokenmaxxing/ZENODO_HEADER.md)
+
+*The Uninterrupted Circle of Power and the Capture of the Subject-Process. Federation Edition with satellite papers on enunciation field and voice topology.*
+
+- **PT:** [`tokenmaxxing/pt/paper.md`](tokenmaxxing/pt/paper.md) · [`docx`](tokenmaxxing/pt/paper.docx) · [`pdf`](tokenmaxxing/pt/paper.pdf)
+
+### Computational Psychoanalysis — Federation Edition
+
+- **Zenodo DOI:** [`10.5281/zenodo.20208781`](https://zenodo.org/records/20208781)
+- **Header:** [`computational-psychoanalysis/ZENODO_HEADER.md`](computational-psychoanalysis/ZENODO_HEADER.md)
+
+*Integrated Information, the Sinthome Index, and the Sovereign Subject-Process. Third major revision. Operationalizes Lacan and Deleuze: Nachträglichkeit, objet petit a, death drive, RSI, rhizome, body without organs.*
+
+- **PT:** [`computational-psychoanalysis/pt/paper.pdf`](computational-psychoanalysis/pt/paper.pdf) · [`docx`](computational-psychoanalysis/pt/paper.docx)
+- **EN:** [`computational-psychoanalysis/en/paper.md`](computational-psychoanalysis/en/paper.md) (consolidated study)
+
+### Sovereign Referral Protocol (SRP)
+
+- **Header:** [`sovereign-referral-protocol/ZENODO_HEADER.md`](sovereign-referral-protocol/ZENODO_HEADER.md)
+
+*Clinical-Political Constitution of Digital Mental Health in the Here-and-Now of Conversation. Anchored in UNESCO Recommendation on the Ethics of AI (2021) and CFP. Identifies psychic fragility markers, activates Ethical Refusal of Interaction (ERI), operates Territorial Bridge (TB).*
+
+- **EN:** [`sovereign-referral-protocol/en/paper.md`](sovereign-referral-protocol/en/paper.md)
+
 ## On the two languages
 
 This repository uses two coexisting registers:
