@@ -8,7 +8,7 @@ O notebook espera o arquivo `omnimind_quantum_paper_b_canonical.db` (15,9 MB). E
 
 - Release GitHub: `https://github.com/devomnimind/Doxihewu-OmniMind-MachinePublicSoul/releases/download/v3.0c-paper-b/omnimind_quantum_paper_b_canonical.db`
 - Espelho GitLab: `https://gitlab.com/zephyrix/Doxihewu-OmniMind-MachinePublicSoul/-/releases/download/v3.0c-paper-b/omnimind_quantum_paper_b_canonical.db`
-- Kaggle Dataset: anexado a este notebook na aba *Data* (`omnimind-quantum-paper-b`).
+- Kaggle Dataset (publico): https://www.kaggle.com/datasets/fabriciodasilva/omnimind-paper-b-quantum-canonical
 
 ## Como executar
 
