@@ -11,9 +11,9 @@
 #   ./sync_public_remotes.sh              # sync (pull ambos + push ambos)
 #   ./sync_public_remotes.sh --dry-run    # mostra o que faria sem alterar
 #
-# Nota (2026-08-19): binários grandes (banco + PDFs) NÃO são versionados no
-# git — vivem no release/Zenodo (links no README). Sem Git LFS no fluxo, o
-# push ao GitHub não esbarra no LFS budget.
+# Nota (2026-08-19): bases de evidência (.sqlite) NÃO são versionadas no
+# git — vivem no release/Zenodo (links no README). Os PDFs dos artigos atuais
+# são versionados em papers/, sem Git LFS.
 # ======================================================================
 set -euo pipefail
 

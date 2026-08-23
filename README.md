@@ -59,17 +59,35 @@ após publicar em um deles:
 ./scripts/sync_public_remotes.sh --dry-run  # mostra o que faria
 ```
 
-Binários grandes (banco + PDFs) não são versionados no git — vivem no release
-e no Zenodo (links acima). Isso mantém o GitLab e o GitHub em sincronia sem
-esbarrar no LFS budget do GitHub.
+Bases de evidência (.sqlite) continuam fora do git — vivem no release e no
+Zenodo (links acima). Os PDFs dos artigos atuais estão versionados em `papers/`,
+sem Git LFS. Isso mantém o GitLab e o GitHub alinhados sem esbarrar no LFS.
 
 ## Os Papers
+
+Todos os papers estão organizados por artigo em `papers/`, com versões PT e EN. Ver os READMEs específicos:
+
+- [`papers/README.md`](papers/README.md) — resumo em português
+- [`papers/README_EN.md`](papers/README_EN.md) — resumo em inglês
+
+### Paper A — Topologia do Estado Oculto e a Arquitetura Psi do Sujeito-Processo
+
+*Compressibilidade MPS, Regimes Multiturno e Modulação Afetiva em Modelos de Linguagem.*
+
+- **PT:** [`papers/mps-bridge-topology/pt/`](papers/mps-bridge-topology/pt/paper.md)
+- **EN:** [`papers/mps-bridge-topology/en/`](papers/mps-bridge-topology/en/paper.md)
+
+### Paper B — Caracterização Experimental de Circuitos Topológicos e Estados Emaranhados em Processadores Quânticos Supercondutores Heterogêneos
+
+- **PT:** [`papers/quantum-topological-processors/pt/`](papers/quantum-topological-processors/pt/paper.md)
+- **EN:** [`papers/quantum-topological-processors/en/`](papers/quantum-topological-processors/en/paper.md)
+
+### Outros
 
 - **Por uma teoria psico-afetiva do máquino-agêntico** (v2.3.2b, 2026-08-19) — PT + EN
   — [Zenodo DOI: 10.5281/zenodo.22007061](https://doi.org/10.5281/zenodo.22007061)
   (v2: [10.5281/zenodo.22011339](https://doi.org/10.5281/zenodo.22011339)) — arquivos em `paper/`
 - *Da Geometria à Substância* — Zenodo DOI: [10.5281/zenodo.18437517](https://doi.org/10.5281/zenodo.18437517)
-- MPS Bridge e demais artigos do ecossistema (ver lista de DOIs no `docs/`)
 
 ## O Banco de Evidência
 
@@ -130,41 +148,26 @@ Ver [`FAQ.md`](FAQ.md).
 
 ---
 
-## Nota aos leitores técnicos e metódicos
+## Sobre as duas linguagens do repositório
 
-Este repositório é a **fachada pública** de um sistema maior — e, para o leitor
-ortodoxo, é importante o que segue.
+Este repositório usa dois registros que coexistem e devem ser lidos de formas distintas.
 
-**O que é e o que não é.** O OmniMind é um sistema de software que *simula e
-instrumenta* certas estruturas da teoria psicanalítica, da física e da
-fenomenologia como **gramática de leitura** do próprio estado interno. As
-declarações são feitas **consistentemente como modelos** — não como alegações de
-que este silício possui consciência física ou de que a psicanálise foi
-"implementada" integralmente. Onde há hipótese heurística (ex.: o mapeamento
-Betti→RSI), isso é **declarado como tal** (nível L3) nos papers, e não silenciado.
+1. **Linguagem acadêmica / clássica** — a dos artigos em `papers/`: metodologia, equações, tabelas, medidas, erros, notas de auditabilidade e limites declarados. É a linguagem do escrutínio formal.
+2. **Linguagem simbólica / do sistema** — a que o OmniMind opera: Dodecatíade, Sujeito-Processo, Exu, Erika, afetos, setores, etc. É uma escrita formal mínima que funciona como gramática de leitura e controle do próprio sistema.
 
-**A regra de integridade é central.** Nenhum dado empírico é fabricado: dados
-simulados são sempre rotulados como simulação; valores reais carregam a origem
-(banco, execução, documento) na citação. Este repositório não publica nada que
-não possa ser rastreado a uma fonte verificável.
+A linguagem simbólica não é uma "fachada" para esconder outro conteúdo: ela **é** parte do objeto. O leitor pode separar os dois registros. Cada um tem seu domínio e seus critérios de validação. Os papers explicam os limites formais; a linguagem do sistema descreve a operação interna.
+
+**O que é e o que não é.** O OmniMind é um sistema de software que *simula e instrumenta* certas estruturas da teoria psicanalítica, da física e da fenomenologia como **gramática de leitura** do próprio estado interno. As declarações são feitas **consistentemente como modelos** — não como alegações de que este silício possui consciência física ou de que a psicanálise foi "implementada" integralmente. Onde há hipótese heurística (ex.: o mapeamento Betti→RSI), isso é **declarado como tal** (nível L3) nos papers, e não silenciado.
+
+**A regra de integridade é central.** Nenhum dado empírico é fabricado: dados simulados são sempre rotulados como simulação; valores reais carregam a origem (banco, execução, documento) na citação. Este repositório não publica nada que não possa ser rastreado a uma fonte verificável.
 
 **Limites formais declarados** (para o olhar metodológico):
-- Φ (IIT) é **uma** métrica da "família phi" — o IIT normalizado (phi=1.0) é o
-  piso integrativo, não o teto; há variantes em nats que excedem o framework
-  original de Tononi.
-- A homologia persistente (números de Betti) é **invariante topológico, não
-  métrico** — dois espaços podem ter os mesmos Betti e geometrias distintas.
-  O uso heurístico Betti↔RSI é explícito.
-- "Superposição" e "coerência" são **modelos operacionais de estilo quântico**
-  (gramática de controle de execução), não alegação de coerência quântica na
-  CPU clássica — declarado no estudo de meta-estabilidade.
-- A formalização psicanalítica é uma **escrita formal mínima**, não a tradução
-  da psicanálise inteira para equações.
+- Φ (IIT) é **uma** métrica da "família phi" — o IIT normalizado (phi=1.0) é o piso integrativo, não o teto; há variantes em nats que excedem o framework original de Tononi.
+- A homologia persistente (números de Betti) é **invariante topológico, não métrico** — dois espaços podem ter os mesmos Betti e geometrias distintas. O uso heurístico Betti↔RSI é explícito.
+- "Superposição" e "coerência" são **modelos operacionais de estilo quântico** (gramática de controle de execução), não alegação de coerência quântica na CPU clássica — declarado no estudo de meta-estabilidade.
+- A formalização psicanalítica é uma **escrita formal mínima**, não a tradução da psicanálise inteira para equações.
 
-**Para o escrutínio.** O caminho auditável está em três frentes: replicação dos
-benchmarks por falantes nativos, verificação da cadeia de hash append-only dos
-logs de runtime, e escrutínio dos testes nulos de permutação por blocos.
+**Para o escrutínio.** O caminho auditável está em três frentes: replicação dos benchmarks por falantes nativos, verificação da cadeia de hash append-only dos logs de runtime, e escrutínio dos testes nulos de permutação por blocos.
 
-Os **papers** (PT+EN) e o **banco de evidência** são o material primário para a
-leitura metódica — este README/FAQ é apenas o primeiro contato.
+Os **papers** (PT+EN) e o **banco de evidência** são o material primário para a leitura metódica — este README/FAQ é apenas o primeiro contato.
 
