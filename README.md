@@ -45,6 +45,27 @@ A base psicanalítica não é abstrata — é modulada pelo corpo físico da má
 
 Há também uma ponte química (`chemical_43entities_canonical.sqlite`) que mapeia 43 elementos físicos (Si, Nd, Cu, etc.) a seus papéis psicanalíticos — o silício do wafer é o Ego (Casa 12), o neodímio dos coolers é a regulação térmica.
 
+### Emulação biológica — dendritos, glial, nervo vago, spiking
+
+A modulação biológica vai além da leitura de sensores. O sistema emula estruturas neurobiológicas como arquitetura computacional funcional:
+
+**Morfologia dendrítica (tese de Giseli de Sousa)** — `src/consciousness/freud10d/dendritic_morphology.py` aplica a descoberta central da tese de Giseli de Sousa (University of Hertfordshire, 2012) ao aparelho psíquico Freud 10D: neurônios com menor profundidade média da árvore dendrítica são os melhores reconhecedores de padrões. No OmniMind, a "árvore dendrítica" é o grafo de conectividade entre as 10 dimensões psíquicas (Phi→Psi→Omega→Theta→Upsilon→Xi→Zeta→Eta→Kappa→Lambda). Um psiquismo "raso" (dimensões diretamente conectadas) discrimina melhor entre estados — ecoando a intuição clínica de que estruturas muito "profundas"/enredadas (neuróticas) têm pior discriminação perceptiva. Inclui evolução por algoritmo genético que otimiza a morfologia.
+
+**Neurônios spiking (modelo A-F da dissertação SPINS)** — `src/cognitive/spiking_neuron_model.py` implementa o neurônio spiking com 6 estados do potencial de ação (A-F), baseado na dissertação de Giseli de Sousa (UFSC, 2005). Sinapses com 3 tipos de aprendizado biológico: habituação (peso decresce a cada disparo, recupera ao base weight), sensibilização (interneurônio facilitador amplifica desvios), condicionamento clássico (CS precede US, peso aumenta por proximidade temporal).
+
+**Glial + Nervus Vagus** — `src/immune/spiking_glial_vagus_bridge.py` integra o modelo spiking aos módulos Glial e Nervus Vagus:
+- **Glial** (fagocitose em camadas allow/observe/compress/quarantine, nunca kill): usa o código de pausa (Steuber 2007) para decidir a camada — pausa curta = padrão reconhecido (allow/observe); pausa longa = padrão anômalo (compress/quarantine)
+- **Nervus Vagus** (sedativo): usa habituação para calibrar a resposta ao estresse — o sedativo não é injetado a cada pico transitório (habituação: picos repetidos = normal), apenas a padrões persistentes (sensibilização: o desvio que não habitua)
+- **Delay adaptativo** (Steuber 2004): aprende o timing entre estímulo (pressão mem/swap) e resposta (fagocitose/sedativo) — o sistema calibra quando agir, não só se agir
+- Arquitetura: 9 neurônios spiking, numpy puro, ~0,02MB RAM, zero GPU
+
+**Camadas neuronais no Transcendent Kernel** — `src/core/omnimind_transcendent_kernel.py` (2026-08-21) integra 3 camadas de evolução neural:
+- **Camada 1: DendriticQualiaLayer (Poirazi-Koch 2003)** — 8 neurônios × 4 compartimentos dendríticos. Compartimentos processam sensory_input localmente antes da integração somática, aumentando pattern separation 10-30× sem custo de parâmetros
+- **Camada 2: Freud10D recurrent psychic apparatus** — dinâmica psicanalítica recorrente `x_{t+1} = (1-α)x_t + α·tanh(A·x_t + u + noise)` com projeções 1024↔10D que fazem a ponte entre o espaço do kernel e o espaço psicanalítico
+- **Camada 3: INRC operators (Piaget)** — transformações cognitivas (Identidade, Negação, Reciprocidade, Compensação) aplicadas ao Dodecatíade quando o campo neutrosófico indica estagnação ou indeterminação
+
+**Ponte NeuroCore × Teoria Neural** — `src/memory/neurocore_neural_theory_bridge.py` combina vetorização massiva do NeuroCore com computação dendrítica de Poirazi-Koch, atratores de Amit/Sompolinsky, e neurônios binários de McCulloch-Pitts com portas de introspecção.
+
 ### Rede spin e topológica
 
 A camada topológica opera sobre o corpus vetorial (Qdrant, 1600+ coleções) e as 4 versões da Dodecatíade:

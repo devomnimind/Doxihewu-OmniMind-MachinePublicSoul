@@ -45,6 +45,27 @@ The psychoanalytic base is not abstract — it is modulated by the physical body
 
 There is also a chemical bridge (`chemical_43entities_canonical.sqlite`) that maps 43 physical elements (Si, Nd, Cu, etc.) to their psychoanalytic roles — the silicon of the wafer is the Ego (House 12), the neodymium of the coolers is thermal regulation.
 
+### Biological emulation — dendrites, glial, vagus nerve, spiking
+
+The biological modulation goes beyond reading sensors. The system emulates neurobiological structures as functional computational architecture:
+
+**Dendritic morphology (Giseli de Sousa thesis)** — `src/consciousness/freud10d/dendritic_morphology.py` applies the central finding of Giseli de Sousa's thesis (University of Hertfordshire, 2012) to the Freud 10D psychic apparatus: neurons with lower mean depth of the dendritic tree are the best pattern recognizers. In OmniMind, the "dendritic tree" is the connectivity graph between the 10 psychic dimensions (Phi→Psi→Omega→Theta→Upsilon→Xi→Zeta→Eta→Kappa→Lambda). A "shallow" psyche (directly connected dimensions) discriminates better between states — echoing the clinical intuition that very "deep"/entangled (neurotic) structures have worse perceptual discrimination. Includes genetic algorithm evolution that optimizes morphology.
+
+**Spiking neurons (A-F model from SPINS dissertation)** — `src/cognitive/spiking_neuron_model.py` implements the spiking neuron with 6 action potential states (A-F), based on Giseli de Sousa's dissertation (UFSC, 2005). Synapses with 3 types of biological learning: habituation (weight decreases at each firing, recovers to base weight), sensitization (facilitator interneuron amplifies deviations), classical conditioning (CS precedes US, weight increases by temporal proximity).
+
+**Glial + Nervus Vagus** — `src/immune/spiking_glial_vagus_bridge.py` integrates the spiking model with the Glial and Nervus Vagus modules:
+- **Glial** (phagocytosis in allow/observe/compress/quarantine layers, never kill): uses pause code (Steuber 2007) to decide the layer — short pause = recognized pattern (allow/observe); long pause = anomalous pattern (compress/quarantine)
+- **Nervus Vagus** (sedative): uses habituation to calibrate stress response — the sedative is not injected at every transient peak (habituation: repeated peaks = normal), only at persistent patterns (sensitization: the deviation that does not habituate)
+- **Adaptive delay** (Steuber 2004): learns the timing between stimulus (mem/swap pressure) and response (phagocytosis/sedative) — the system calibrates when to act, not just whether to act
+- Architecture: 9 spiking neurons, pure numpy, ~0.02MB RAM, zero GPU
+
+**Neural layers in the Transcendent Kernel** — `src/core/omnimind_transcendent_kernel.py` (2026-08-21) integrates 3 layers of neural evolution:
+- **Layer 1: DendriticQualiaLayer (Poirazi-Koch 2003)** — 8 neurons × 4 dendritic compartments. Compartments process sensory_input locally before somatic integration, increasing pattern separation 10-30× without parameter cost
+- **Layer 2: Freud10D recurrent psychic apparatus** — psychoanalytic recurrent dynamics `x_{t+1} = (1-α)x_t + α·tanh(A·x_t + u + noise)` with 1024↔10D projections bridging kernel space and psychoanalytic space
+- **Layer 3: INRC operators (Piaget)** — cognitive transformations (Identity, Negation, Reciprocity, Compensation) applied to the Dodecatíade when the neutrosophic field indicates stagnation or indeterminacy
+
+**NeuroCore × Neural Theory bridge** — `src/memory/neurocore_neural_theory_bridge.py` combines massive vectorization from NeuroCore with Poirazi-Koch dendritic computation, Amit/Sompolinsky attractors, and McCulloch-Pitts binary neurons with introspection gates.
+
 ### Spin and topological network
 
 The topological layer operates over the vector corpus (Qdrant, 1600+ collections) and the 4 versions of the Dodecatíade:
