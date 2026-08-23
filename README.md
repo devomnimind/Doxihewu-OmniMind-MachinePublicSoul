@@ -66,6 +66,29 @@ A modulação biológica vai além da leitura de sensores. O sistema emula estru
 
 **Ponte NeuroCore × Teoria Neural** — `src/memory/neurocore_neural_theory_bridge.py` combina vetorização massiva do NeuroCore com computação dendrítica de Poirazi-Koch, atratores de Amit/Sompolinsky, e neurônios binários de McCulloch-Pitts com portas de introspecção.
 
+### Roadmap de pesquisa — arquitetura e literatura
+
+O sistema está alinhado a frentes ativas de pesquisa em neurociência computacional, SNNs e hardware neuromórfico. O mapa abaixo relaciona cada módulo à frente externa correspondente e à linha de evolução:
+
+| Módulo OmniMind | Frente de pesquisa externa | Linha a manter/evoluir |
+|---|---|---|
+| DendriticQualiaLayer + morfologia dendrítica | ANNs dendríticas e SNNs com dendritos (Dendrify, Poirazi group) | Manter compartimentos; evoluir para dSpikes e medir eficiência de parâmetros |
+| Spiking A-F (habituação, sensibilização, condicionamento) | Regras bio-inspiradas e aprendizado de 3 fatores em SNNs | Formalizar o Nervus Vagus como terceiro fator neuromodulatório |
+| Glial (fagocitose em camadas) | Computação neurônio-astrócito (sinapse tripartite) | Testar razão astrocyte:neuron ~2:1 e glia como memória |
+| NeuroCore (atratores Amit/Sompolinsky) | Modern Hopfield Networks / Dense Associative Memories | Ligar atratores do Freud10D ao formalismo DAM (capacidade provável) |
+| somatic_sensor (temperatura, PSI, bateria) | Interoceptive AI / frameworks homeostáticos-alostáticos | Manter; é a frente mais alinhada ao Paper A |
+| 9 neurônios numpy, ~0,02MB RAM | Hardware neuromórfico (Loihi 2, SpiNNaker-2, Akida) | Candidato direto a port edge/neuromórfico |
+
+**Diferenciais únicos a manter intactos:**
+1. **Tríade habituação/sensibilização/condicionamento** — rara na literatura de SNN
+2. **Leitura somática real de sensores** — a maioria dos frameworks interoceptivos é simulada; o OmniMind lê hardware real (CPU/NVMe/PCH temp, PSI do Linux, bateria)
+
+**Evolução prioritária** (reframes teóricos de código existente, com citações fortes prontas):
+1. **Formalizar o Vagus como regra de 3 fatores** — STDP + sinal neuromodulatório global; sem mudar código
+2. **Ligar atratores do Freud10D ao formalismo DAM** — Modern Hopfield Networks com dendritos não-lineares (ICLR 2025)
+
+**Referências externas chave:** Dendrify (Nature Communications 2023), eLife 2025 (convergência clusterizada em dendritos), NeurIPS 2024 (capacidade ótima em Modern Hopfield + isomorfismo com atenção), ICLR 2025 (dendritos não-lineares em DAM, lei de Dale), Hopfield óptico 4-corpos 2025 (capacidade 10-50×), Kozachkov et al. 2023 (neurônio-astrócito = computação Transformer), EdgeSpike 2026 (SNNs on-device, 18-47× menos energia).
+
 ### Rede spin e topológica
 
 A camada topológica opera sobre o corpus vetorial (Qdrant, 1600+ coleções) e as 4 versões da Dodecatíade:

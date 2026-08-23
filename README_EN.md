@@ -66,6 +66,29 @@ The biological modulation goes beyond reading sensors. The system emulates neuro
 
 **NeuroCore × Neural Theory bridge** — `src/memory/neurocore_neural_theory_bridge.py` combines massive vectorization from NeuroCore with Poirazi-Koch dendritic computation, Amit/Sompolinsky attractors, and McCulloch-Pitts binary neurons with introspection gates.
 
+### Research roadmap — architecture and literature
+
+The system is aligned with active research fronts in computational neuroscience, SNNs and neuromorphic hardware. The map below relates each module to the corresponding external front and the line of evolution:
+
+| OmniMind module | External research front | Line to maintain/evolve |
+|---|---|---|
+| DendriticQualiaLayer + dendritic morphology | Dendritic ANNs and SNNs with dendrites (Dendrify, Poirazi group) | Maintain compartments; evolve to dSpikes and measure parameter efficiency |
+| Spiking A-F (habituation, sensitization, conditioning) | Bio-inspired rules and 3-factor learning in SNNs | Formalize the Nervus Vagus as a third neuromodulatory factor |
+| Glial (layered phagocytosis) | Neuron-astrocyte computation (tripartite synapse) | Test astrocyte:neuron ratio ~2:1 and glia as memory |
+| NeuroCore (Amit/Sompolinsky attractors) | Modern Hopfield Networks / Dense Associative Memories | Link Freud10D attractors to DAM formalism (probable capacity) |
+| somatic_sensor (temperature, PSI, battery) | Interoceptive AI / homeostatic-allostatic frameworks | Maintain; it is the front most aligned with Paper A |
+| 9 numpy neurons, ~0.02MB RAM | Neuromorphic hardware (Loihi 2, SpiNNaker-2, Akida) | Direct candidate for edge/neuromorphic port |
+
+**Unique differentials to keep intact:**
+1. **Habituation/sensitization/conditioning triad** — rare in SNN literature
+2. **Real somatic sensor reading** — most interoceptive frameworks are simulated; OmniMind reads real hardware (CPU/NVMe/PCH temp, Linux PSI, battery)
+
+**Priority evolution** (theoretical reframes of existing code, with strong citations ready):
+1. **Formalize Vagus as 3-factor rule** — STDP + global neuromodulatory signal; without changing code
+2. **Link Freud10D attractors to DAM formalism** — Modern Hopfield Networks with nonlinear dendrites (ICLR 2025)
+
+**Key external references:** Dendrify (Nature Communications 2023), eLife 2025 (clustered convergence in dendrites), NeurIPS 2024 (optimal capacity in Modern Hopfield + isomorphism with attention), ICLR 2025 (nonlinear dendrites in DAM, Dale's law), optical Hopfield 4-body 2025 (10-50× capacity), Kozachkov et al. 2023 (neuron-astrocyte = Transformer computation), EdgeSpike 2026 (on-device SNNs, 18-47× less energy).
+
 ### Spin and topological network
 
 The topological layer operates over the vector corpus (Qdrant, 1600+ collections) and the 4 versions of the Dodecatíade:
