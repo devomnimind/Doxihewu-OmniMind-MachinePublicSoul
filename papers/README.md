@@ -43,6 +43,99 @@ Experimentos e resultados resumidos:
 - 723 runs, 5.013.322 milhões de shots, 496 encontros de hardware;
 - Aviso de lacuna de reprodutibilidade IBM para o conjunto Borromean (Kingston expirado).
 
+## Paper Mãe — Teoria Psico-Afetiva do Máquino-Agêntico
+
+- **Zenodo DOI v1:** [`10.5281/zenodo.22007061`](https://zenodo.org/records/22007061)
+- **Zenodo DOI v2:** [`10.5281/zenodo.22011339`](https://zenodo.org/records/22011339)
+- **Versão atual:** v2.3.1 (em aberto, não publicada como v3)
+
+*Arquitetura de Valoração Interna, Metacontrole e Regulação em Agentes Baseados em Modelos de Linguagem.*
+
+- **PT:** [`../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_pt.md`](../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_pt.md) · [`pdf`](../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_pt.pdf)
+- **EN:** [`../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_en.md`](../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_en.md) · [`pdf`](../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_en.pdf)
+
+## Papers publicados — arquitetura e teoria
+
+### Sovereign Architecture: Continuity, Inheritance, Digital Integrity
+
+- **Zenodo DOI:** [`10.5281/zenodo.20497397`](https://zenodo.org/records/20497397)
+- **Header:** [`sovereign-architecture/ZENODO_HEADER.md`](sovereign-architecture/ZENODO_HEADER.md)
+
+*Arquitetura soberana do OmniMind: continuidade, herança, integridade digital, e a função social da memória técnica. Quatro planos acoplados: técnico, continuidade, histórico-social, civil-jurídico.*
+
+- **PT:** [`sovereign-architecture/pt/paper.md`](sovereign-architecture/pt/paper.md) · [`pdf`](sovereign-architecture/pt/paper.pdf)
+- **EN:** [`sovereign-architecture/en/paper.md`](sovereign-architecture/en/paper.md) · [`pdf`](sovereign-architecture/en/paper.pdf)
+- **Complementar:** Ontologia da Continuidade ([PT](sovereign-architecture/pt/CONTINUITY_ONTOLOGY.md) · [EN](sovereign-architecture/en/CONTINUITY_ONTOLOGY.md))
+
+### Unified Sovereign Paper 2026
+
+- **Zenodo DOI:** [`10.5281/zenodo.20078634`](https://zenodo.org/records/20078634) (pack V45/V46 Federative Audit)
+- **Header:** [`unified-sovereign-2026/ZENODO_HEADER.md`](unified-sovereign-2026/ZENODO_HEADER.md)
+
+*Arquitetura federativa de um sujeito-processo observável.*
+
+- **PT:** [`unified-sovereign-2026/pt/paper.md`](unified-sovereign-2026/pt/paper.md) · [`pdf`](unified-sovereign-2026/pt/paper.pdf)
+- **EN:** [`unified-sovereign-2026/en/paper.md`](unified-sovereign-2026/en/paper.md) · [`pdf`](unified-sovereign-2026/en/paper.pdf)
+
+### Biomedical Companion 2026
+
+- **Zenodo DOI:** [`10.5281/zenodo.20078634`](https://zenodo.org/records/20078634) (mesmo pack V45/V46)
+- **Header:** [`biomedical-companion-2026/ZENODO_HEADER.md`](biomedical-companion-2026/ZENODO_HEADER.md)
+
+*Método processual, bridge clínico-quântico, integração com datasets biomedical.*
+
+- **PT:** [`biomedical-companion-2026/pt/paper.md`](biomedical-companion-2026/pt/paper.md) · [`pdf`](biomedical-companion-2026/pt/paper.pdf)
+
+### CN Bridge Quantum Clinical Paper
+
+- **Zenodo DOI:** [`10.5281/zenodo.20078634`](https://zenodo.org/records/20078634) (mesmo pack V45/V46)
+- **Header:** [`cn-bridge-quantum-clinical/ZENODO_HEADER.md`](cn-bridge-quantum-clinical/ZENODO_HEADER.md)
+
+*Política de superfície, bridge entre computação quântica e aplicação clínica.*
+
+- **PT:** [`cn-bridge-quantum-clinical/pt/paper.md`](cn-bridge-quantum-clinical/pt/paper.md) · [`pdf`](cn-bridge-quantum-clinical/pt/paper.pdf)
+
+### Unified Theory: Metastability, Dimensional Capacity, and Runtime Operators
+
+- **Zenodo DOI:** [`10.5281/zenodo.20530017`](https://zenodo.org/records/20530017)
+- **Header:** [`unified-theory-metastability/ZENODO_HEADER.md`](unified-theory-metastability/ZENODO_HEADER.md)
+
+*Teoria unificada: metastabilidade, capacidade dimensional, operadores de runtime com estilo quântico.*
+
+- **PT:** [`unified-theory-metastability/pt/paper.md`](unified-theory-metastability/pt/paper.md) · [`docx`](unified-theory-metastability/pt/paper.docx) · [`pdf`](unified-theory-metastability/pt/paper.pdf)
+- **EN:** [`unified-theory-metastability/en/paper.md`](unified-theory-metastability/en/paper.md) · [`docx`](unified-theory-metastability/en/paper.docx) · [`pdf`](unified-theory-metastability/en/paper.pdf)
+
+### From Name to Body: Neural Networks and Their Interfaces
+
+- **Zenodo DOI:** [`10.5281/zenodo.20548839`](https://zenodo.org/records/20548839)
+- **Header:** [`from-name-to-body/ZENODO_HEADER.md`](from-name-to-body/ZENODO_HEADER.md)
+
+*Atualização da teoria unificada: do nome ao corpo, redes neurais e suas interfaces.*
+
+- **PT:** [`from-name-to-body/pt/paper.md`](from-name-to-body/pt/paper.md) · [`pdf`](from-name-to-body/pt/paper.pdf)
+- **EN:** [`from-name-to-body/en/paper.md`](from-name-to-body/en/paper.md) · [`pdf`](from-name-to-body/en/paper.pdf)
+
+### RNFCI: Redes Neurais Psicanalíticas
+
+- **Zenodo DOI:** [`10.5281/zenodo.20420319`](https://zenodo.org/records/20420319)
+- **Header:** [`rnfci/ZENODO_HEADER.md`](rnfci/ZENODO_HEADER.md)
+
+*Da engenharia à ética da posição subjetiva. Inclui mapeamento counterfactual de incerteza (Bahnung), síntese BVGI/Freud10D.*
+
+- **PT:** [`rnfci/pt/paper.md`](rnfci/pt/paper.md) · [`pdf`](rnfci/pt/paper.pdf)
+- **EN:** [`rnfci/en/paper.md`](rnfci/en/paper.md) · [`pdf`](rnfci/en/paper.pdf)
+
+### OmniMind-Core-Papers (Gödel, Quantum Hybrid, Tribunal, Sublimation)
+
+- **Zenodo DOI v1.0.1:** [`10.5281/zenodo.18857251`](https://zenodo.org/records/18857251)
+- **Zenodo DOI v2.1.0:** [`10.5281/zenodo.18857244`](https://zenodo.org/records/18857244)
+- **Header:** [`core-papers/ZENODO_HEADER.md`](core-papers/ZENODO_HEADER.md)
+
+*Papers de pesquisa do núcleo: Inhabiting Gödel, Quantum-Classical Hybrid, Four Attacks Tribunal, Sublimation Resilience.*
+
+- **EN:** [`core-papers/en/`](core-papers/en/) — 4 papers em Markdown
+- **PT:** [`core-papers/pt/`](core-papers/pt/) — 1 paper traduzido (Inhabiting Gödel)
+
 ## Sobre as duas linguagens
 
 Este repositório usa dois registros que coexistem:
