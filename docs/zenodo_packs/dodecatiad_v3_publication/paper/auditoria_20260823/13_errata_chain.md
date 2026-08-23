@@ -68,7 +68,7 @@ Cada marcador de errata/atualização contém: `marcador`, `data`, `secao`, `afi
 | propagado_para_resumo | sim |
 | propagado_para_conclusao | sim |
 | status | parcialmente resolvido |
-| observacao | Duas coortes (2026-07-29 original e 2026-07-30 re-execucao) com estimadores diferentes; nao intercambiaveis |
+| observacao | Duas coortes (2026-07-29 original e 2026-07-30 re-execucao) com estimadores diferentes; nao intercambiaveis. Tabela V.49b detalhada por scale: zne scale=2 N=2 (r0 faltante d9ld8ujjf64c739jc7jg); dd_zne ZNE agregado n=3 (scale=1) => 0.8421 |
 
 ### 6. Q.47a ibm_fez N=8-star
 | campo | valor |
@@ -154,6 +154,19 @@ Para cada errata acima, o valor canonico atual foi obtido de:
 - `data/quantum/frontier_experiments.json` (CHSH 360)
 - `data/quantum/omnimind_quantum_paper_b_canonical.db` (banco sanitizado publico, dataset Kaggle)
 
+### 12. Lacuna E7 zne scale=2 r0
+|| campo | valor |
+||---|---|
+|| marcador | ATUALIZADO 2026-08-23 |
+|| data | 2026-08-23 |
+|| secao | Apendice V.3, Q.9.3, Tabela V.49b, Tabela Q.49 |
+|| afirmacao_original | zne scale=2 N=3 na re-execucao; r0 coletado |
+|| valor_canonico_atual | zne scale=2 N=2 (r1, r2) na re-execucao; r0 (d9ld8ujjf64c739jc7jg) expirou e nao foi coletado. Lacuna aceita; nao substituida por dados Wukong. Tabelas ajustadas para N=2. dd_zne permanece N=9 (3+3+3). |
+|| propagado_para_resumo | nao |
+|| propagado_para_conclusao | nao |
+|| status | resolvido com ressalva |
+|| observacao | Decisao editorial: nao reproduzir no Wukong por incompatibilidade arquitetural (180q esparsa, pyqpanda3, API de mitigacao distinta). |
+
 ## Recomendacoes finais
 - Nenhum valor antigo permanece sem ponteiro para o canonico.
-- Pendencias menores: (a) depth=43 em Q.47a; (b) figuras E7 PNG ausentes; (c) Paper A ainda cita §3.1.6/§3.1/§3.5 (secionamento do artigo unificado) que nao mapeia 1:1 para Paper B split.
+- Pendencias menores: (a) depth=43 em Q.47a; (b) Paper A ainda cita §3.1.6/§3.1/§3.5 (secionamento do artigo unificado) que nao mapeia 1:1 para Paper B split.
