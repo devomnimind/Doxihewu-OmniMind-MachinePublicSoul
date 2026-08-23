@@ -18,3 +18,4 @@ venv/
 # Binários grandes (download via release/Zenodo, não versionados no git)
 evidence/*.sqlite
 paper/*.pdf
+notebooks/**/*.sqlite
