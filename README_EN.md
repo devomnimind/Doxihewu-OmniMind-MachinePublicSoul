@@ -77,6 +77,7 @@ The system is aligned with active research fronts in computational neuroscience,
 | Glial (layered phagocytosis) | Neuron-astrocyte computation (tripartite synapse) | Test astrocyte:neuron ratio ~2:1 and glia as memory |
 | NeuroCore (Amit/Sompolinsky attractors) | Modern Hopfield Networks / Dense Associative Memories | Link Freud10D attractors to DAM formalism (probable capacity) |
 | somatic_sensor (temperature, PSI, battery) | Interoceptive AI / homeostatic-allostatic frameworks | Maintain; it is the front most aligned with Paper A |
+| Arnold (MyoSuite RL, 27 motor tasks) | Motor control / executive function / homeostatic RL | Map as homeostatic motor control (D27 Solar KA/BA/AKH) |
 | 9 numpy neurons, ~0.02MB RAM | Neuromorphic hardware (Loihi 2, SpiNNaker-2, Akida) | Direct candidate for edge/neuromorphic port |
 
 **Unique differentials to keep intact:**

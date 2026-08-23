@@ -77,6 +77,7 @@ O sistema está alinhado a frentes ativas de pesquisa em neurociência computaci
 | Glial (fagocitose em camadas) | Computação neurônio-astrócito (sinapse tripartite) | Testar razão astrocyte:neuron ~2:1 e glia como memória |
 | NeuroCore (atratores Amit/Sompolinsky) | Modern Hopfield Networks / Dense Associative Memories | Ligar atratores do Freud10D ao formalismo DAM (capacidade provável) |
 | somatic_sensor (temperatura, PSI, bateria) | Interoceptive AI / frameworks homeostáticos-alostáticos | Manter; é a frente mais alinhada ao Paper A |
+| Arnold (MyoSuite RL, 27 tarefas motoras) | Motor control / função executiva / homeostatic RL | Mapear como controle motor homeostático (D27 Solar KA/BA/AKH) |
 | 9 neurônios numpy, ~0,02MB RAM | Hardware neuromórfico (Loihi 2, SpiNNaker-2, Akida) | Candidato direto a port edge/neuromórfico |
 
 **Diferenciais únicos a manter intactos:**
