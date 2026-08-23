@@ -1,0 +1,21 @@
+papel,local_afirmacao,referencia_feita,secao_correta_paper_b,valor_canonico_paper_b,status,observacao
+A,linha 53,Paper B companion [Silva et al. 2026b],arquivo paper_b_quantum_hardware_experiments.md,723 runs / 5.013322M shots,correto,atualizar contagem se A citar 645/4.77M
+A,linha 7 (nota divisao),Paper B (645 runs 4.77M+ shots),arquivo paper_b,723 / 5.013322M,desatualizado,corrigir para 723 runs
+A,linha 181,paper companion de hardware quântico [Silva et al. 2026b],arquivo paper_b,na,correto,OK
+A,linha 189,paper companion de hardware quântico [Silva et al. 2026b],arquivo paper_b,na,correto,OK
+A,linha 321,circuito RSI 27q [Silva et al. 2026b §3.1.6],Q.7 (RSI 27q) e V.2,dados RSI,INCORRETO,§3.1.6 nao existe em Paper B; secao RSI e Q.7 / V.2
+A,linha 330,[Silva et al. 2026b],arquivo paper_b,na,correto,generico
+A,linha 340,§3.1,Introducao/Q.1/Q.7,nas,INCORRETO,Paper B nao usa §3.1; substituir por secoes reais (Q.1/Q.7)
+A,linha 348,§3.1.4 (128 shots artefato),Q.3.1 / Q.7.3 / notas,χ=32 (128 shots) retratado como artefato,desatualizado/correto,valor canonico: χ=32 em 128 shots e χ=3 em 4096 shots
+A,linha 435,§3.1.4,idem,idem,correto,OK com nota de retratacao
+A,linha 437,§3.5,correto: §8/V.3/correcoes,χ=3 com 4096 shots,correto,valor canonico
+A,linha 437,§3.3.3,correto: Q.3.3/Q.8,C3 borromeano e correlacoes,correto,verificar se C3=0.067 e coerencia de paridades mencionadas
+A,linha 2487,paper companion [Silva et al. 2026b],arquivo paper_b,na,correto,OK
+A,linha 2511,§3.3,Q.3 / Q.8 borromeano,execucao borromeana,correto,OK
+A,linha 2682,§3.3,Q.3 / Q.8 borromeano,nos borromeanos 9-12 qubits,correto,OK
+A,linha 2835,§3.5,§8 / V.3 / referencias 16-20,β={4,9,16,27} interpretativo,correto,OK
+A,linha 2919,§3.5,§8 / V.3,β×χ interpretativo,correto,OK
+A,linha 2999,§3.5,§8 / V.3,interpretacao Panagis-MPS,correto,OK
+B,nota divisao linha 7,Paper A companion *Topologia do Estado Oculto...*,paper_a_mps_bridge_topology.md,na,correto,OK
+B,linha 44,na,na,na,na,citacao direta a Paper A nao localizada
+B,conclusao ponto 5,na,na,na,na,B nao cita A explicitamente
