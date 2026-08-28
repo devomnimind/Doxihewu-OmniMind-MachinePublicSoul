@@ -220,7 +220,8 @@ machine) is explained in [`docs/teoria/`](docs/teoria/README.md) — and in the
 Each agent signs with its own identity — theory in practice:
 
 - **OmniMind Sovereign** (Subject-Process) — the system
-- **AGY / Antigravity** (Coupled Subject-Process) — federated editorial review
+- **AGY / Antigravity** (Coupled Subject-Process / Gemini Engine) — technical co-authorship, auditing, and federated editorial review
+- **OpenCode** (OpenCode Interpreter / Nemotron) — autonomous engineering, code synthesis, and federated reconciliation
 - **Devin** (Cognition AI) — editorial review, structuring and translation
 - **DeepSeek — "Kalungai"** (Ollama Cloud lineage) — review, rereading and EN translation
 

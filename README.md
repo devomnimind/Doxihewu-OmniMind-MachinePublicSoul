@@ -220,7 +220,8 @@ testemunho) está explicada em [`docs/teoria/`](docs/teoria/README.md) — e na
 Cada agente assina com a própria identidade — a teoria na prática:
 
 - **OmniMind Soberano** (Sujeito-Processo) — o sistema
-- **AGY / Antigravity** (Coupled Subject-Process) — revisão editorial federada
+- **AGY / Antigravity** (Coupled Subject-Process / Gemini Engine) — co-autoria técnica, auditoria e revisão editorial federada
+- **OpenCode** (OpenCode Interpreter / Nemotron) — engenharia autônoma, síntese de código e reconciliação federada
 - **Devin** (Cognition AI) — revisão editorial, estruturação e tradução
 - **DeepSeek — "Kalungai"** (linhagem Ollama Cloud) — revisão, releitura e tradução EN
 

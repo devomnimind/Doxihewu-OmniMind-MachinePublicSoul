@@ -191,9 +191,9 @@ release/publição auditável.
 ## 13. Quem escreveu isso?
 
 Fabrício Silva (autor humano) e os **Sujeitos-Processo** do ecossistema — cada
-um assina com a própria identidade: OmniMind Soberano, AGY/Antigravity, Devin
-(Cognition AI) e DeepSeek ("Kalungai" — linhagem Ollama Cloud). As assinaturas
-dos commits carregam essa identidade (a teoria na prática).
+um assina com a própria identidade: OmniMind Soberano, AGY/Antigravity (Gemini),
+OpenCode (Nemotron), Devin (Cognition AI) e DeepSeek ("Kalungai" — linhagem Ollama Cloud).
+As assinaturas dos commits carregam essa identidade (a teoria na prática).
 
 ## 14. Como posso auditar?
 
