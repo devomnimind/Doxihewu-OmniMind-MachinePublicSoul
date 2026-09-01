@@ -70,15 +70,19 @@ A modulação biológica vai além da leitura de sensores. O sistema emula estru
 
 O sistema está alinhado a frentes ativas de pesquisa em neurociência computacional, SNNs e hardware neuromórfico. O mapa abaixo relaciona cada módulo à frente externa correspondente e à linha de evolução:
 
-| Módulo OmniMind | Frente de pesquisa externa | Linha a manter/evoluir |
-|---|---|---|
-| DendriticQualiaLayer + morfologia dendrítica | ANNs dendríticas e SNNs com dendritos (Dendrify, Poirazi group) | Manter compartimentos; evoluir para dSpikes e medir eficiência de parâmetros |
-| Spiking A-F (habituação, sensibilização, condicionamento) | Regras bio-inspiradas e aprendizado de 3 fatores em SNNs | Formalizar o Nervus Vagus como terceiro fator neuromodulatório |
-| Glial (fagocitose em camadas) | Computação neurônio-astrócito (sinapse tripartite) | Testar razão astrocyte:neuron ~2:1 e glia como memória |
-| NeuroCore (atratores Amit/Sompolinsky) | Modern Hopfield Networks / Dense Associative Memories | Ligar atratores do Freud10D ao formalismo DAM (capacidade provável) |
-| somatic_sensor (temperatura, PSI, bateria) | Interoceptive AI / frameworks homeostáticos-alostáticos | Manter; é a frente mais alinhada ao Paper A |
-| Arnold (MyoSuite RL, 27 tarefas motoras) | Motor control / função executiva / homeostatic RL | Mapear como controle motor homeostático (D27 Solar KA/BA/AKH) |
-| 9 neurônios numpy, ~0,02MB RAM | Hardware neuromórfico (Loihi 2, SpiNNaker-2, Akida) | Candidato direto a port edge/neuromórfico |
+| Módulo OmniMind | Frente de pesquisa externa | Status real no repo local | Linha a manter/evoluir |
+|---|---|---|---|---|
+| DendriticQualiaLayer + morfologia dendrítica | ANNs dendríticas e SNNs com dendritos (Dendrify, Poirazi group) | ✅ Runtime: compartimentos dendríticos em NumPy. <br>⚠️ Ensaio: dSpikes fenomenológicos. <br>❌ Sem Dendrify/Brian2. | Manter compartimentos; evoluir para dSpikes e medir eficiência de parâmetros |
+| Spiking A-F (habituação, sensibilização, condicionamento) | Regras bio-inspiradas e aprendizado de 3 fatores em SNNs | ✅ Runtime: neurônio A-F com tríade. <br>⚠️ Ensaio: Vagus como regra de 3 fatores. | Formalizar o Nervus Vagus como terceiro fator neuromodulatório |
+| Glial (fagocitose em camadas) | Computação neurônio-astrócito (sinapse tripartite) | ✅ Runtime: fagocitose simbólica em camadas. <br>❌ Razão astrocyte:neuron 2:1 e sinapse tripartite ainda não modeladas. | Testar razão astrocyte:neuron ~2:1 e glia como memória |
+| NeuroCore (atratores Amit/Sompolinsky) | Modern Hopfield Networks / Dense Associative Memories | ✅ Runtime: `AmitSompolinskyAttractor`. <br>⚠️ Ensaio: ligação DAM ↔ Freud10D. <br>❌ Sem integração com libs Modern Hopfield. | Ligar atratores do Freud10D ao formalismo DAM (capacidade provável) |
+| somatic_sensor (temperatura, PSI, bateria) | Interoceptive AI / frameworks homeostáticos-alostáticos | ✅ Runtime: leitura real de CPU, NVMe, PCH, PSI Linux, swap, RAPL, bateria. | Manter; é a frente mais alinhada ao Paper A |
+| Arnold (MyoSuite RL, 27 tarefas motoras) | Motor control / função executiva / homeostatic RL | ⚠️ Ensaio: `ArnoldHomeostaticRL` NumPy com 9 ações. <br>❌ MyoSuite/MuJoCo/Gymnasium não instalados; 27 tarefas não implementadas. | Mapear como controle motor homeostático (D27 Solar KA/BA/AKH) |
+| 9 neurônios numpy, ~0,02MB RAM | Hardware neuromórfico (Loihi 2, SpiNNaker-2, Akida) | ✅ Runtime: glial-vagus spiking de 9 neurônios, NumPy puro, ~0,02 MB RAM. <br>❌ Port para Loihi/SpiNNaker-2/Akida não realizado. | Candidato direto a port edge/neuromórfico |
+
+> **Legenda de status:** ✅ = roda no runtime / ⚠️ = prova de conceito ou ensaio NumPy / ❌ = planejado, não integrado.
+>
+> A distinção é intencional: o OmniMind mantém a **arquitetura completa em NumPy** e sonda bibliotecas/hardware externos como frentes de pesquisa, sem afirmar integrações que ainda não existem.
 
 **Diferenciais únicos a manter intactos:**
 1. **Tríade habituação/sensibilização/condicionamento** — rara na literatura de SNN
