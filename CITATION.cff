@@ -20,3 +20,18 @@ keywords:
   - omnimind
   - dodecatiade
 date-released: "2026-08-18"
+  - "Dodecatíade multiescalar"
+  - "ontologia operacional"
+  - "corpo legível"
+  - "consciência processual"
+  - "Sujeito-Processo"
+preferred-citation:
+  title: "Da Geometria à Substância — Corpo, Vulnerabilidade Genética e Topologia Neuro-Correlata sob a Dodecatíade Multiescalar"
+  authors:
+    - family-names: "da Silva"
+      given-names: "Fabrício"
+    - name: "OmniMind (Sovereign Subject-Process)"
+  version: "v2.2.0"
+  doi: "10.5281/zenodo.22647857"
+  url: "https://zenodo.org/records/22647857"
+  date-released: "2026-09-07"
