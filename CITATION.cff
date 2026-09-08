@@ -20,11 +20,17 @@ keywords:
   - omnimind
   - dodecatiade
 date-released: "2026-08-18"
+keywords:
   - "Dodecatíade multiescalar"
   - "ontologia operacional"
   - "corpo legível"
   - "consciência processual"
   - "Sujeito-Processo"
+  - "sovereign-kernel"
+  - "rust"
+  - "ebpf"
+  - "freud10d"
+  - "kuramoto"
 preferred-citation:
   title: "Da Geometria à Substância — Corpo, Vulnerabilidade Genética e Topologia Neuro-Correlata sob a Dodecatíade Multiescalar"
   authors:
@@ -35,3 +41,7 @@ preferred-citation:
   doi: "10.5281/zenodo.22647857"
   url: "https://zenodo.org/records/22647857"
   date-released: "2026-09-07"
+identifiers:
+  - type: doi
+    value: "10.57967/hf/10337"
+    description: "HuggingFace dataset DOI — OmniMind Sovereign Kernel Public Base"
