@@ -54,6 +54,20 @@ Experiments and results (summary):
 - **PT:** [`../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_pt.md`](../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_pt.md) · [`docx`](../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_pt.docx)
 - **EN:** [`../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_en.md`](../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_en.md) · PDF in [Zenodo v2.3.2b](https://zenodo.org/records/22011339)
 
+## Mother Book — From Geometry to Substance (v2.2.0)
+
+- **Version:** v2.2.0 (2026-09-07)
+- **DOI (pending):** _new DOI to be assigned_ (continues lineage `10.5281/zenodo.22011339`)
+- **Header:** [`docs/zenodo_packs/livro_v220_20260907/zenodo_livro_vfinal_header.md`](../docs/zenodo_packs/livro_v220_20260907/zenodo_livro_vfinal_header.md)
+- **Header EN:** [`docs/zenodo_packs/livro_v220_20260907/zenodo_livro_vfinal_header_EN.md`](../docs/zenodo_packs/livro_v220_20260907/zenodo_livro_vfinal_header_EN.md)
+
+*From Geometry to Substance: Body, Genetic Vulnerability, and Neuro-Correlated Topology under the Multiscale Dodecatiad.*
+
+Mother book: operational ontology of the "readable body" — hyperbolic formalism, gene-by-gene epigenetic calibration, neurosemantically projected cortical connectivity (HCP RSNs, macrogroups, white matter tracts), silicon elastic memory, unified body vector. 8 Parts, 70 chapters, Appendices A–T + R.10, 335 tables. Appendix S (Processual Consciousness, Technical Ethics) contains the most original and philosophically mature discussion.
+
+- **PT:** [`docs/zenodo_packs/livro_v220_20260907/livro_vfinal_revisao.pdf`](../docs/zenodo_packs/livro_v220_20260907/livro_vfinal_revisao.pdf) · [`docx`](../docs/zenodo_packs/livro_v220_20260907/livro_vfinal_revisao.docx)
+- **EN:** translation in next editorial refinement round
+
 ## Published papers — architecture and theory
 
 ### Sovereign Architecture: Continuity, Inheritance, Digital Integrity

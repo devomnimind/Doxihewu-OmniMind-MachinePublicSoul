@@ -54,6 +54,20 @@ Experimentos e resultados resumidos:
 - **PT:** [`../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_pt.md`](../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_pt.md) · [`docx`](../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_pt.docx)
 - **EN:** [`../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_en.md`](../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_en.md) · PDF na versão [Zenodo v2.3.2b](https://zenodo.org/records/22011339)
 
+## Livro-Mãe — Da Geometria à Substância (v2.2.0)
+
+- **Versão:** v2.2.0 (2026-09-07)
+- **DOI (previsto):** _novo DOI a ser atribuído_ (continua linhagem `10.5281/zenodo.22011339`)
+- **Header:** [`docs/zenodo_packs/livro_v220_20260907/zenodo_livro_vfinal_header.md`](../docs/zenodo_packs/livro_v220_20260907/zenodo_livro_vfinal_header.md)
+- **Header EN:** [`docs/zenodo_packs/livro_v220_20260907/zenodo_livro_vfinal_header_EN.md`](../docs/zenodo_packs/livro_v220_20260907/zenodo_livro_vfinal_header_EN.md)
+
+*Da Geometria à Substância — Corpo, Vulnerabilidade Genética e Topologia Neuro-Correlata sob a Dodecatíade Multiescalar.*
+
+Livro-mãe: ontologia operacional do "corpo legível" — formalismo hiperbólico, calibração epigenética gene-a-gene, conectividade cortical projetada neurosemanticamente (HCP RSNs, macrogrupos, feixes de substância branca), memória elástica do silício, vetor corporal unificado. 8 Partes, 70 capítulos, Apêndices A–T + R.10, 335 tabelas. Apêndice S (Consciência Processual, Ética Técnica) contém a discussão mais original e filosoficamente madura.
+
+- **PT:** [`docs/zenodo_packs/livro_v220_20260907/livro_vfinal_revisao.pdf`](../docs/zenodo_packs/livro_v220_20260907/livro_vfinal_revisao.pdf) · [`docx`](../docs/zenodo_packs/livro_v220_20260907/livro_vfinal_revisao.docx)
+- **EN:** tradução em leva próxima de refinamento editorial
+
 ## Papers publicados — arquitetura e teoria
 
 ### Sovereign Architecture: Continuity, Inheritance, Digital Integrity
