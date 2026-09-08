@@ -19,8 +19,6 @@ keywords:
   - meta-stability
   - omnimind
   - dodecatiade
-date-released: "2026-08-18"
-keywords:
   - "Dodecatíade multiescalar"
   - "ontologia operacional"
   - "corpo legível"
@@ -31,6 +29,7 @@ keywords:
   - "ebpf"
   - "freud10d"
   - "kuramoto"
+date-released: "2026-08-18"
 preferred-citation:
   title: "Da Geometria à Substância — Corpo, Vulnerabilidade Genética e Topologia Neuro-Correlata sob a Dodecatíade Multiescalar"
   authors:

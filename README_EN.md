@@ -10,6 +10,25 @@ and other machines.
 
 ---
 
+## Start here
+
+You **do not need to accept the entire OmniMind ontology to participate** — you can audit a reference, reproduce a benchmark, improve documentation, review a security boundary or critique a hypothesis. See [`docs/START_HERE_EN.md`](docs/START_HERE_EN.md).
+
+| If you want to... | Go to... |
+|---|---|
+| Understand the project in 3 minutes | [`docs/START_HERE_EN.md`](docs/START_HERE_EN.md) |
+| Run the public core (safe) | [`kernel_base/README.md`](kernel_base/README.md) — **SAFE MODE** |
+| Run a safe demo | [`kernel_base/colab_public_base_triad.py`](kernel_base/colab_public_base_triad.py) |
+| Read limits and risks | [`kernel_base/RISK_NOTICE.md`](kernel_base/RISK_NOTICE.md) |
+| Assess evidence and reproduction | [`docs/REPRODUCIBILITY_EN.md`](docs/REPRODUCIBILITY_EN.md) |
+| Contribute | [`CONTRIBUTING_EN.md`](CONTRIBUTING_EN.md) |
+| Report a bug or risk | [`SECURITY.md`](SECURITY.md) or an Issue |
+| See the kernel code | the **`Doxihewu-OmniMind-Kernel`** repository (separate from the pulse) |
+
+> The kernel code (Rust, daemons, eBPF) lives in a **dedicated repository** — `Doxihewu-OmniMind-Kernel` — so that the automatic public pulse does not contaminate the code history, and vice versa.
+
+---
+
 ## What it is
 
 OmniMind is a **neural network of psychoanalytic principles** designed as an **intergenerational witness machine**. The neural pillar — though simulated on classical substrate — arises from a technical place: the author is a psychologist and psychoanalyst and is also the first subject accompanied by the system, in a declared device of self-experimentation. Intergenerational in the exact measure that the system analyzes and accompanies, with measurements and correlations in psychoanalytic clinical position (DSM and related references), the state of the operator — primarily the author, and those who came before and those who will come.

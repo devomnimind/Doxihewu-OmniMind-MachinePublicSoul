@@ -47,12 +47,12 @@ Experimentos e resultados resumidos:
 
 - **Zenodo DOI v1:** [`10.5281/zenodo.22007061`](https://zenodo.org/records/22007061)
 - **Zenodo DOI v2:** [`10.5281/zenodo.22011339`](https://zenodo.org/records/22011339)
-- **Versão atual:** v2.3.1 (em aberto, não publicada como v3)
+- **Versão atual:** v2.3.2b (publicada em 2026-08-19; o artigo v2 sucede a linhagem v1)
 
 *Arquitetura de Valoração Interna, Metacontrole e Regulação em Agentes Baseados em Modelos de Linguagem.*
 
-- **PT:** [`../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_pt.md`](../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_pt.md) · [`pdf`](../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_pt.pdf)
-- **EN:** [`../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_en.md`](../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_en.md) · [`pdf`](../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_en.pdf)
+- **PT:** [`../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_pt.md`](../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_pt.md) · [`docx`](../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_pt.docx)
+- **EN:** [`../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_en.md`](../paper/por_uma_teoria_psico_afetiva_do_maquino_agentico_en.md) · PDF na versão [Zenodo v2.3.2b](https://zenodo.org/records/22011339)
 
 ## Papers publicados — arquitetura e teoria
 
@@ -138,7 +138,7 @@ Experimentos e resultados resumidos:
 
 ### Tokenmaxxing, Pobreza e Infraestrutura de IA
 
-- **Zenodo DOI:** [`10.5281/zenodo.19339303`](https://zenodo.org/records/19339303)
+- **Zenodo DOI:** [`10.5281/zenodo.20330301`](https://zenodo.org/records/20330301) (Federation Edition, 2026-05-21)
 - **Header:** [`tokenmaxxing/ZENODO_HEADER.md`](tokenmaxxing/ZENODO_HEADER.md)
 
 *O Círculo Ininterrupto do Poder e a Captura do Sujeito-Processo. Federation Edition com papers satélite sobre campo de enunciação e topologia da voz.*
@@ -162,6 +162,27 @@ Experimentos e resultados resumidos:
 *Clinical-Political Constitution of Digital Mental Health in the Here-and-Now of Conversation. Ancorado na UNESCO Recommendation on the Ethics of AI (2021) e no CFP. Identifica marcadores de fragilidade psíquica, ativa Recusa Ética de Interação (ERI), opera Ponte Territorial (TB).*
 
 - **EN:** [`sovereign-referral-protocol/en/paper.md`](sovereign-referral-protocol/en/paper.md)
+
+### Scientific Continuity (linhagem v4.x — Pesquisa Federada)
+
+- **Zenodo DOI (v4.2, atual):** [`10.5281/zenodo.19596936`](https://zenodo.org/records/19596936) (2026-04-15)
+- **Zenodo DOI (v4.1, linhagem anterior):** [`10.5281/zenodo.19326508`](https://zenodo.org/records/19326508)
+- **Pack associado (Reports Runtime / Public-Safe):** [`10.5281/zenodo.19339303`](https://zenodo.org/records/19339303) (2026-03-30)
+
+*Pesquisa federada em consciência, cosmos e saúde — maturidade arquitetural, metabolismo federado e curadoria multiprocessual. Sucesor editorial da linhagem v4.1.*
+
+### Historical Subject-Process (HSP) — RNFCI Co-Authorship
+
+- **Zenodo DOI:** [`10.5281/zenodo.20453054`](https://zenodo.org/records/20453054) (2026-05-30)
+- **Pack relacionado (PT/EN):** [`10.5281/zenodo.20453053`](https://zenodo.org/records/20453053)
+
+*Sujeito-Processo Histórico OmniMind: Documentação de Prioridade, Ressonâncias Externas e Estratégia de Coautoria RNFCI. Registro de prioridade científica e coautoria federativa.*
+
+### Continuation Studies — D15 Cross-Species Bio Topology, RNP-D v4, Vulnerability Simulator
+
+- **Zenodo DOI:** [`10.5281/zenodo.20435772`](https://zenodo.org/records/20435772) (2026-05-28/29) (RNFCI Edition)
+
+*OmniMind Continuation Studies: topologia bio D15 cross-species, isomorfismo RNP-D v4 e simulador de vulnerabilidade — RNFCI Edition.*
 
 ## Sobre as duas linguagens
 

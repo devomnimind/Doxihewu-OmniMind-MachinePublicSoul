@@ -24,6 +24,18 @@ size_categories:
 
 > **Minimum reproducible nucleus of the OmniMind sovereign kernel for independent study, criticism, and collaborative development.**
 
+> [!WARNING]
+> **Default mode is SAFE, user-space reproduction only.**
+>
+> Do **not** load kernel modules, attach eBPF programs, start privileged daemons or alter system services unless you have read:
+> - `RISK_NOTICE.md`
+> - `SECURITY.md`
+> - `docs/THREAT_MODEL.md`
+>
+> **SAFE MODE** — compile the user-space crates, run the tests, use the public Colab (`colab_public_base_triad.py`). No sudo, no eBPF, no kernel module, no systemd changes. *This is the recommended first execution path.*
+>
+> **ADVANCED SYSTEM MODE** — the `ebpf_monitor` and `sovereign_module` crates are **source-only and privileged** (root/DKMS). They may involve eBPF, a kernel module, or `CAP_BPF`/`CAP_SYS_ADMIN`/sudo. They require an **isolated machine**, full reading of the notices above, a snapshot/backup, and should **never** be executed by default or without specialized human review.
+
 ## What this is
 
 This package contains a **curated subset** of the OmniMind sovereign kernel's Rust crates,
