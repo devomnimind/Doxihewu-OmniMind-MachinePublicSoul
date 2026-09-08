@@ -267,6 +267,52 @@ print(f"batch thresholds: {[f'{t:.2f}' for t in batch.get_thresholds()]}")
 print("PsychoanalyticLIF OK")
 
 # ============================================================
+# Teste 4b: Saturation validation — clamp + offset formula
+# ============================================================
+print("\n=== Teste 4b: LIF Saturation Validation ===")
+v_rest, theta_base = -65.0, -50.0
+offset = theta_base - v_rest  # 15.0
+
+# Sweep T and I — verify threshold always above v_rest
+saturation_ok = True
+for T_val, I_val, desc in [
+    (1.0, 0.0, "T=1.0 I=0.0 (total truth)"),
+    (0.9, 0.0, "T=0.9 I=0.0 (high truth)"),
+    (0.5, 0.5, "T=0.5 I=0.5 (balanced)"),
+    (0.1, 0.8, "T=0.1 I=0.8 (high indeterminacy)"),
+    (0.0, 1.0, "T=0.0 I=1.0 (total indeterminacy)"),
+]:
+    lif_test = osk.PsychoanalyticLIF(v_rest=-65.0, v_reset=-70.0, v_threshold=-50.0, refractory_period=3, leak_rate=0.1)
+    lif_test.set_neutrosophic(T_val, I_val, 0.0)
+    thresh = lif_test.dynamic_threshold()
+    above_rest = thresh - v_rest
+    print(f"  {desc}: threshold={thresh:.2f} ({above_rest:.2f} above rest)")
+    if above_rest <= 0:
+        print(f"  FAIL: threshold below v_rest — spontaneous firing!")
+        saturation_ok = False
+
+# Firing pattern: high truth should fire more than high indeterminacy
+batch_truth = osk.PsychoanalyticLIFBatch(10, -65.0, -70.0, -50.0, 3, 0.1)
+batch_truth.set_neutrosophic_batch([(1.0, 0.0, 0.0)] * 10)
+spikes_truth = sum(sum(batch_truth.step_batch([15.0] * 10)) for _ in range(100))
+
+batch_doubt = osk.PsychoanalyticLIFBatch(10, -65.0, -70.0, -50.0, 3, 0.1)
+batch_doubt.set_neutrosophic_batch([(0.0, 1.0, 0.0)] * 10)
+spikes_doubt = sum(sum(batch_doubt.step_batch([15.0] * 10)) for _ in range(100))
+
+print(f"  Firing (input=15): truth={spikes_truth}, doubt={spikes_doubt}")
+if spikes_truth > spikes_doubt:
+    print(f"  PASS: truth fires more than doubt (differentiation preserved)")
+else:
+    print(f"  CHECK: truth should fire more than doubt")
+
+if saturation_ok:
+    print("LIF saturation validation OK")
+else:
+    print("LIF saturation validation FAILED")
+    sys.exit(1)
+
+# ============================================================
 # Teste 5: HopfBifurcationMonitor
 # ============================================================
 print("\n=== Teste 5: HopfBifurcationMonitor ===")
