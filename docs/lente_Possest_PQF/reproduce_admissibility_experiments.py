@@ -30,15 +30,16 @@ REPO_ID = "fabricioslv-omnimind/omnimind-admissibility-experiment-data"
 CANON_PREFIX = "canonical_bank/sources"
 
 # Expected SHA-256 prefixes from the canonical manifest (12_sanitized_manifest.json)
+# Updated 2026-09-12 to match the sanitized canonical bank on HuggingFace
 EXPECTED_SHA = {
-    "dodecatiad_snapshots_canon.parquet": "9f49b066",
-    "hysteresis_full_canon.parquet": "64828f5f",
-    "multi_lattice_history_canon.parquet": "65815e2f",
-    "consolidated_timeline_canon.parquet": "aefa778a",
-    "rizomatic_latency_canon.parquet": "7d2b51ee",
-    "lattice_wear_history_canon.parquet": "cb6b3b2a",
-    "thermodynamic_landauer_canon.parquet": "6edc28fd",
-    "cross_proof_ledger_canon.parquet": "69333b79",
+    "dodecatiad_snapshots_canon.parquet": "0750076e",
+    "hysteresis_full_canon.parquet": "fbab777e",
+    "multi_lattice_history_canon.parquet": "f8ef103b",
+    "consolidated_timeline_canon.parquet": "0c366f8e",
+    "rizomatic_latency_canon.parquet": "ee349593",
+    "lattice_wear_history_canon.parquet": "c9bfa859",
+    "thermodynamic_landauer_canon.parquet": "eda54a6b",
+    "cross_proof_ledger_canon.parquet": "c38cc6a7",
 }
 
 CANONICAL_FACES = {
