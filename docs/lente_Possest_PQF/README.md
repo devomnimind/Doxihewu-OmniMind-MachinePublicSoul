@@ -12,6 +12,8 @@ Esta pasta contém o artigo derivado que aplica o estudo do livro-mãe *Da Geome
 | `admissibility_article_EN.md` | Tradução em inglês para revisão do interlocutor |
 | `README.md` | Este arquivo |
 | `reproduce_admissibility_experiments.py` | Script de reprodução dos 5 experimentos |
+| `yochanan_3_additional_experiments.py` | 3 experimentos adicionais (face ablation, groupoid, threshold sensitivity) |
+| `MAP_H_A_F_UPDATE_RULE.md` | Mapa "Where do H, A, F, and the update rule live in OmniMind?" (primeiro deliverable pedido por Yochanan) |
 | `CORRESPONDENCE_RECORD.md` | Registro da correspondência com Yochanan (perguntas respondidas + perguntas em aberto) |
 
 ## Posicionamento epistêmico
