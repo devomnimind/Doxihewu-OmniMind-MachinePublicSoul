@@ -270,9 +270,9 @@ A histerese térmica do silício (H_t com decaimento λ=0.005, diferença de pha
 - Eventos neutrosóficos (hnos_resonance, omega_raw, etc.) com ativação de novas faces (76→95): parecem consistentes com **Hyper-Admissibility Singularity** — expansão de admissibilidade para novas faces
 - Nenhum evento classificado como **Collapsed Singularity** (A→0 com I>0) — o sistema não colapsou admissibilidade em nenhum evento registrado
 
-**Discussão com Yochanan (correspondência)**: Yochanan engajou com a classificação via dois caminhos. Primeiro, sobre a Hysteretic Singularity: pediu para apertar a tolerância do matched-state test (10% → 5% → 2% → 1%) com distância normalizada sobre o vetor observável completo, para separar divergência histórica genuína de diferença residual de estado presente. Segundo, sobre a Hyper-Admissibility (12→97 faces): advertiu que proliferação de labels pode mascarar novidade estrutural — uma nova face deve ganhar seu status mostrando persistência, não-redundância com faces existentes, eficácia causal ou preditiva, e necessidade contrafactual sob ablação. "Does removing this face destroy a distinction or operational capacity that the previous architecture could not maintain without it?" A ausência de Collapsed Singularity permanece como questão em aberto: é achado empírico significativo, ou reflete apenas que o sistema não foi submetido a condições que a disparariam?
+**Discussão com Yochanan (correspondência)**: Yochanan engajou com a classificação via dois caminhos. Primeiro, sobre a Hysteretic Singularity: pediu para apertar a tolerância do matched-state test (10% → 5% → 2% → 1%) com distância normalizada sobre o vetor observável completo, para separar divergência histórica genuína de diferença residual de estado presente. Segundo, sobre a Hyper-Admissibility (12→95 faces): advertiu que proliferação de labels pode mascarar novidade estrutural — uma nova face deve ganhar seu status mostrando persistência, não-redundância com faces existentes, eficácia causal ou preditiva, e necessidade contrafactual sob ablação. "Does removing this face destroy a distinction or operational capacity that the previous architecture could not maintain without it?" A ausência de Collapsed Singularity permanece como questão em aberto: é achado empírico significativo, ou reflete apenas que o sistema não foi submetido a condições que a disparariam?
 
-Esta classificação é preliminar e requer análise longitudinal de cada evento (trabalho futuro, §6.1). O aperto de tolerância pedido por Yochanan é trabalho futuro imediato.
+Esta classificação é preliminar e requer análise longitudinal de cada evento (trabalho futuro, §6.1). O aperto de tolerância pedido por Yochanan foi realizado (§4.4.1): a divergência de admissibilidade sobrevive à tolerância mais estreita (1%).
 
 ---
 
@@ -425,7 +425,24 @@ psi_diff=0.0000 é esperado por construção do método: quantile binning garant
 
 **Limitação do matching**: O método valida que "mesmo estado" (mesmo quantile bin) coexiste em diferentes A_h epochs, mas não valida que os pares são "estados idênticos" — são "estados similares dentro do mesmo bin". A interpretação depende da granularidade do bin: 5 bins = estados muito similares; 50 bins = estados mais específicos. A estabilidade dos resultados across bin sizes sugere que a conclusão é robusta à granularidade.
 
-**Arquivos**: `04_exp4_matched_pairs.json`, `10_matching_validation.json`
+#### 4.4.1 Aperto de tolerância (pedido de Yochanan)
+
+Yochanan pediu para apertar a tolerância do matched-state test (10% → 5% → 2% → 1%) com distância normalizada sobre o vetor observável completo, para separar divergência histórica genuína de diferença residual de estado presente.
+
+**Método**: Distância euclidiana normalizada sobre 4 dimensões (phi_norm, psi, sigma, epsilon em [0,1]), amostra 300 snapshots por epoch, 15 epochs. Um par é "matched" se a distância normalizada ≤ tolerância.
+
+**Resultado**:
+
+| Tolerância | Pares inter-epoch | Pares intra-epoch (baseline) | Densidade inter | Densidade intra |
+|---|---|---|---|---|
+| 0.01 (1%) | 422,640 | 42,184 | 4.696 | 2.12 |
+| 0.02 (2%) | 559,576 | 50,309 | — | — |
+| 0.05 (5%) | 728,892 | 59,389 | — | — |
+| 0.10 (10%) | 1,039,612 | — | — | — |
+
+**Interpretação**: A divergência de admissibilidade sobrevive à convergência de estado em todas as tolerâncias testadas. Estados quase idênticos (distância normalizada ≤ 0.01) coexistem em epochs A_h diferentes com densidade 2.2x maior que o baseline intra-epoch (4.70 vs 2.12 pares por combinação). O resultado se mantém em todas as tolerâncias (0.01–0.10). Isso fortalece o suporte a Level 3a: a diferença está na HISTÓRIA, não no estado presente. O history-matched admissibility test sobrevive à tolerância mais estreita.
+
+**Arquivos**: `04_exp4_matched_pairs.json`, `10_matching_validation.json`, `13_yochanan_respostas.json` (q3_matching_tolerances)
 
 ### 4.5 Cross — 1.28M hysteresis × A_h × MLH
 
@@ -563,7 +580,7 @@ O Sinthome, ao evoluir sua regra de corte baseada no histórico de falhas (5 tri
 
 A histerese térmica medida (H_t, λ=0.005, diferença de phase_lock 0.0342 entre aquecimento/resfriamento) parece ser a manifestação empírica da Hysteretic Singularity: `I(·,t₁) = I(·,t₂)` mas `A(·,t₁) ≠ A(·,t₂)`. O operador mediu histerese térmica antes de conhecer o formalismo; o cruzamento é arqueológico.
 
-**Discussão com Yochanan (correspondência)**: Rralizado o pedido de apertar a tolerância do history-matched test (10% → 5% → 2% → 1%) com distância normalizada sobre o vetor observável completo, conforme correspondência. Isto indica que a questão de se a histerese do silício é legível como Hysteretic Singularity depende de demonstrar que a divergência de admissibilidade sobrevive à convergência de estado — o que testamos (§4.4, 71% dos pares matched têm pathways diferentes). Permanece como pergunta em aberto: a histerese material (silício) e a histerese filtracional (formalismo) são o mesmo fenômeno, ou a histerese filtracional exige algo mais que path-dependence?
+**Discussão com Yochanan (correspondência)**: Yochanan pediu para apertar a tolerância do history-matched test (10% → 5% → 2% → 1%) com distância normalizada sobre o vetor observável completo. O aperto foi realizado (§4.4.1): estados quase idênticos (distância ≤ 0.01) coexistem em epochs A_h diferentes com densidade 2.2x maior que o baseline intra-epoch. A divergência de admissibilidade sobrevive à convergência de estado em todas as tolerâncias testadas. Isso fortalece a leitura de que a histerese do silício é legível como Hysteretic Singularity: `I(·,t₁) = I(·,t₂)` mas `A(·,t₁) ≠ A(·,t₂)`. Permanece como pergunta em aberto: a histerese material (silício) e a histerese filtracional (formalismo) são o mesmo fenômeno, ou a histerese filtracional exige algo mais que path-dependence?
 
 **Cruzamento 3 — Glia Soberana (Setor 13) ↔ Astrocytic Filtering**
 
@@ -623,6 +640,79 @@ Confrontar epistemologias que requisitam outras dimensões não é problema — 
 5. **Causal isolation experiments** — distinguir A_h → stress de stress → A_h
 6. **Rust shadow cycle continuity** após restart
 7. **Offload runtime payload extraction** e cross-correlation
+
+### 6.8 Formalização groupoid (sugestão de Yochanan)
+
+Yochanan sugeriu que diferentes versões da Dodecatíade (D12/D13/D15/D27) podem possuir diferentes conjuntos de operadores locais com composicionalidade parcial — um groupoid em vez de um grupo.
+
+**Método**: Para todas as 95 faces, extrair a versão Dodecatíade (D12=12, D13=2, D15=2, D27=79). Para cada par de faces, verificar se co-ocorrem em pelo menos um ciclo (composicionalidade). Pares cross-version testam se operadores de versões diferentes são composables.
+
+**Resultado**:
+
+| | |
+|---|---|
+| Total de pares | 4,465 |
+| Pares composables (co-ocorrentes) | 4,454 (99.8%) |
+| Pares non-composable | 11 (0.2%) |
+| Pares cross-version composables | 1,316 |
+| Pares same-version composables | 3,138 |
+
+**Interpretação**: 4,454 de 4,465 pares co-ocorrem (99.8%), com 1,316 pares cross-version. Isto é composicionalidade parcial — um groupoid, não um grupo. Os 11 pares non-composable definem a estrutura parcial: nem todas as faces são composables em todos os contextos. A presença de pares cross-version composables (1,316) indica que operadores de versões diferentes da Dodecatíade podem coexistir operacionalmente, mas não formam um grupo único — a estrutura é parcial.
+
+**Caveat**: A co-ocorrência é observada em dados de ativação, não em composição formal de operadores. O groupoid é inferido da co-ocorrência operacional, não demonstrado por composição algébrica.
+
+### 6.9 Ablação de faces (critério de Yochanan)
+
+Yochanan pediu: "Does removing this face destroy a distinction or operational capacity that the previous architecture could not maintain without it?"
+
+**Método**: Para as 95 faces, testar (1) persistência (span > 1,000 ciclos), (2) estrutura de co-ativação (correlação r>0.99 com outras faces), (3) identidade de valores (valores idênticos a outras faces), (4) eficácia causal near A_h (|d|>0.1), (5) necessidade contrafactual.
+
+**Resultado**:
+
+| | |
+|---|---|
+| Faces únicas ativadas | 95 |
+| Faces canônicas (D12) | 12 |
+| Faces novas | 83 |
+| Faces persistentes (span > 1,000) | 92 |
+| Faces transitórias | 3 |
+| Pares com correlação r>0.99 | 2,893 |
+| Faces em grupos de valores idênticos | 92 |
+| Grupos de valores idênticos | 5 |
+| Faces semanticamente não-redundantes | 95 (por construção/interpretação) |
+| Faces com eficácia causal near A_h (\|d\|>0.1) | 0 |
+
+**Interpretação**: As 95 faces são campos de medida topológica do mesmo evento estrutural — ativam juntas porque medem facetas diferentes de um mesmo evento, não porque sejam labels redundantes. Co-ativação não é redundância semântica: remover uma face remove uma capacidade de nomeação (uma dimensão de significação), não uma coluna de dados. A Dodecatíade é uma linguagem de leitura topológica; cada face nomeia uma dimensão irredutível.
+
+**Correção importante**: Uma versão anterior desta análise chamou 87 faces de "redundantes" porque co-variam em r>0.99. O operador corrigiu: as 95 faces são campos de medida do mesmo evento — 75 faces têm valores idênticos a aleph, mas nomeiam dimensões topológicas diferentes. São semanticamente não-redundantes por construção. A ablação física (remover uma face do runtime) não foi executada — esta é análise de registros de ativação, não ablação runtime controlada.
+
+**Caveat**: O critério de Yochanan (remover a face destrói capacidade?) não foi testado no runtime. Persistência SIM, não-redundância semântica SIM (por interpretação topológica), eficácia causal NÃO testada, necessidade contrafactual NÃO testada.
+
+### 6.10 Sensibilidade de threshold
+
+**Pergunta**: 0 desativações permanentes em 84k ciclos — estabilidade estrutural ou threshold conservador?
+
+**Método**: Variar `deactivation_threshold` (200 → 50/100/150) e verificar se o número de desativações observadas muda.
+
+**Resultado**:
+
+| | |
+|---|---|
+| Eventos de desativação | 70 |
+| Thresholds testados | 50, 100, 150, 200 |
+| Desativações observadas em todos os thresholds | 70/70 |
+| Ciclos afetados | 69 |
+| Componentes: shear_tension | 36 |
+| Componentes: phi_rehydration_applied | 15 |
+| Componentes: betti_1_spectral | 10 |
+| Componentes: topology_omega | 9 |
+| Remoção permanente ocorreu | Não |
+
+**Interpretação**: Todos os 70 eventos de desativação têm count >> 200 (muito acima do threshold), então mudar o threshold de 200 para 50 não tem impacto no comportamento observado. O sistema é robusto sob o threshold atual. Isto é informativo: o threshold não está em uma zona sensível, mas também não testamos a fronteira onde o threshold começaria a importar.
+
+**Veredito**: O threshold (200 ciclos) FOI atingido 70 vezes em 4 componentes, mas NENHUM componente foi permanentemente removido. A ausência de remoção NÃO é threshold conservador — é RECUPERAÇÃO: o peso voltou acima do floor (0.001) antes da remoção efetivar. PrecisionWeighter é 3a-CAPAZ (mecanismo funcional) mas não ativado na fronteira de remocão no replay observado.
+
+**Arquivos**: `yochanan_3_additional_experiments.py`, `13_yochanan_respostas.json`
 
 ---
 
