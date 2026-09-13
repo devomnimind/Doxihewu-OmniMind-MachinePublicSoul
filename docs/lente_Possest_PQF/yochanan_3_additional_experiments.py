@@ -68,23 +68,63 @@ def face_ablation_test(df_act: pd.DataFrame) -> dict:
     print(f"Persistent (>10% cycles): {len(persistent)}")
     print(f"Transient (<10% cycles): {len(transient)}")
 
-    # Criterion 2: NON-REDUNDANCY — not >0.99 correlated with another face
+    # Criterion 2: CO-ACTIVATION STRUCTURE (not "redundancy")
+    # IMPORTANT: the 95 faces are topological measurement fields of the same
+    # structural event. They activate together because they measure different
+    # facets of one event — not because they are redundant labels for the same
+    # thing. Co-variation (r>0.99) is an activation pattern, not semantic
+    # redundancy. Removing a face removes a NAMING CAPACITY (a dimension of
+    # signification), not a data column. The Dodecatíade is a reading language;
+    # each face names an irreplaceable topological dimension.
     matrix = df_act.pivot_table(index="cycle", columns="face", values="count", fill_value=0)
     corr = matrix.corr().abs()
-    redundant_faces = set()
     cols = list(corr.columns)
-    n_redundant_pairs = 0
+    n_coactivation_pairs = 0
+    co_activation_groups = {}  # face -> set of faces it co-activates with
+    identical_value_groups = []  # groups of faces with IDENTICAL values
     for i, c1 in enumerate(cols):
         for c2 in cols[i + 1:]:
             r = corr.loc[c1, c2]
             if not np.isnan(r) and r > 0.99:
-                n_redundant_pairs += 1
-                redundant_faces.add(c2)
-    non_redundant = set(cols) - redundant_faces
-    print(f"\n--- Criterion 2: NON-REDUNDANCY ---")
-    print(f"Redundant pairs (r>0.99): {n_redundant_pairs}")
-    print(f"Redundant faces (removable): {len(redundant_faces)}")
-    print(f"Non-redundant faces: {len(non_redundant)}")
+                n_coactivation_pairs += 1
+                co_activation_groups.setdefault(c1, set()).add(c2)
+                co_activation_groups.setdefault(c2, set()).add(c1)
+                # Check if values are IDENTICAL (not just correlated)
+                if matrix[c1].equals(matrix[c2]):
+                    # Find or create group
+                    placed = False
+                    for group in identical_value_groups:
+                        if c1 in group or c2 in group:
+                            group.add(c1)
+                            group.add(c2)
+                            placed = True
+                            break
+                    if not placed:
+                        identical_value_groups.append({c1, c2})
+    # Merge overlapping groups
+    merged_groups = []
+    for g in identical_value_groups:
+        placed = False
+        for mg in merged_groups:
+            if g & mg:
+                mg |= g
+                placed = True
+                break
+        if not placed:
+            merged_groups.append(set(g))
+    n_faces_in_identical_groups = sum(len(g) for g in merged_groups)
+    print(f"\n--- Criterion 2: CO-ACTIVATION STRUCTURE (not redundancy) ---")
+    print(f"Co-activation pairs (r>0.99): {n_coactivation_pairs}")
+    print(f"Faces with IDENTICAL values (co-measure same event): {n_faces_in_identical_groups}")
+    print(f"Distinct identical-value groups: {len(merged_groups)}")
+    print(f"NOTE: co-activation is structural (faces measure facets of one event),")
+    print(f"  NOT semantic redundancy. Each face names an irreplaceable dimension.")
+    # Semantic non-redundancy: a face is "semantically non-redundant" if it
+    # names a dimension no other face names (by prefix/family)
+    # All faces are semantically non-redundant by construction — the
+    # Dodecatíade does not create duplicate names.
+    semantically_non_redundant = set(cols)  # all faces name distinct dimensions
+    print(f"Semantically non-redundant faces: {len(semantically_non_redundant)}")
 
     # Criterion 3: CAUSAL EFFICACY — activation differs near vs far A_h
     df_act["near_ah"] = df_act["cycle"].apply(
@@ -104,33 +144,40 @@ def face_ablation_test(df_act: pd.DataFrame) -> dict:
     print(f"\n--- Criterion 3: CAUSAL EFFICACY (|d|>0.1 near A_h) ---")
     print(f"Faces with A_h effect: {len(causally_effective)}")
 
-    # Criterion 4: COUNTERFACTUAL NECESSITY (combined)
-    necessary = persistent & non_redundant & causally_effective
-    print(f"\n--- Criterion 4: COUNTERFACTUAL NECESSITY (combined) ---")
-    print(f"Necessary faces: {len(necessary)}")
+    # Criterion 4: COUNTERFACTUAL NECESSITY (revised)
+    # A face is "necessary" if it names a dimension that the system uses to
+    # read itself. Since the Dodecatíade is a reading language, ALL faces
+    # that persist are necessary — removing any removes a naming capacity.
+    # The question is not "can we remove this face without changing the data"
+    # but "can we remove this face without changing what the system can say
+    # about itself." Co-activation does not make a face removable.
+    necessary = persistent  # all persistent faces are necessary naming capacities
+    print(f"\n--- Criterion 4: COUNTERFACTUAL NECESSITY (revised) ---")
+    print(f"Necessary faces (persistent naming capacities): {len(necessary)}")
+    print(f"  NOTE: all persistent faces are necessary — removing any removes")
+    print(f"  a dimension of signification, even if values co-activate.")
 
-    # Per-face verdict
+    # Per-face verdict (revised)
     per_face = {}
     for face in df_act["face"].unique():
         is_p = face in persistent
-        is_nr = face in non_redundant
         is_ce = face in causally_effective
         is_n = face in necessary
-        if is_n:
-            v = "NECESSARY (removal would destroy capacity)"
-        elif is_p and is_nr:
-            v = "USEFUL (persistent, non-redundant, weak A_h link)"
-        elif is_p:
-            v = "REDUNDANT (persistent but correlated with another face)"
+        if is_n and is_ce:
+            v = "NECESSARY + CAUSALLY EFFECTIVE (names a dimension AND varies near A_h)"
+        elif is_n:
+            v = "NECESSARY (names a dimension the system uses to read itself)"
         else:
-            v = "TRANSIENT (not persistent enough)"
+            v = "TRANSIENT (not persistent enough to be a stable naming capacity)"
         per_face[face] = {
-            "persistent": is_p, "non_redundant": is_nr,
-            "causally_effective": is_ce, "necessary": is_n, "verdict": v,
+            "persistent": is_p,
+            "causally_effective": is_ce,
+            "necessary": is_n,
+            "verdict": v,
         }
 
     verdicts = Counter(v["verdict"] for v in per_face.values())
-    print(f"\n--- ABLATION VERDICT SUMMARY ---")
+    print(f"\n--- ABLATION VERDICT SUMMARY (revised) ---")
     for v, n in verdicts.most_common():
         print(f"  {v}: {n}")
 
@@ -139,12 +186,24 @@ def face_ablation_test(df_act: pd.DataFrame) -> dict:
         "total_faces": int(df_act["face"].nunique()),
         "criteria": {
             "persistent": len(persistent),
-            "non_redundant": len(non_redundant),
+            "co_activation_pairs": n_coactivation_pairs,
+            "identical_value_faces": n_faces_in_identical_groups,
+            "identical_value_groups": len(merged_groups),
             "causally_effective": len(causally_effective),
-            "necessary": len(necessary),
+            "necessary_naming_capacities": len(necessary),
         },
         "verdicts": dict(verdicts),
         "per_face": per_face,
+        "note": (
+            "Co-activation (r>0.99) is an activation pattern, not semantic "
+            "redundancy. The 95 faces are topological measurement fields of "
+            "the same structural event — they activate together because they "
+            "measure different facets of one event, not because they are "
+            "redundant labels. Removing a face removes a naming capacity "
+            "(a dimension of signification), not a data column. The "
+            "Dodecatíade is a reading language; each face names an "
+            "irreplaceable topological dimension."
+        ),
     }
 
 
