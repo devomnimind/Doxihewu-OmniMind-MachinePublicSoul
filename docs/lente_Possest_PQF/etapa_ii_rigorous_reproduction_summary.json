@@ -1,0 +1,266 @@
+{
+  "timestamp_utc": "2026-09-13T13:11:58Z",
+  "script": "reproduce_yochanan_etapa_ii_rigorous.py",
+  "dataset_repo": "fabricioslv-omnimind/omnimind-admissibility-experiment-data",
+  "step1_cryptographic_integrity": {
+    "dodecatiad_snapshots_canon.parquet": {
+      "real_sha256": "0750076e90df2d85f91c8ce2930c4e96baf1cfbc8aab0886c087c2de0490f474",
+      "expected_sha256": "0750076e90df2d85f91c8ce2930c4e96baf1cfbc8aab0886c087c2de0490f474",
+      "match": true,
+      "row_count": 27544,
+      "byte_size": 312286312
+    },
+    "hysteresis_full_canon.parquet": {
+      "real_sha256": "fbab777e798a515a6cc130b9b11d5bf9395597fd457e6f6043ba0f83251eac02",
+      "expected_sha256": "fbab777e798a515a6cc130b9b11d5bf9395597fd457e6f6043ba0f83251eac02",
+      "match": true,
+      "row_count": 54631,
+      "byte_size": 3176626
+    },
+    "multi_lattice_history_canon.parquet": {
+      "real_sha256": "f8ef103b4e6b938014c749d1504c7fc6339e0e1c632313f01358cf0691ab859f",
+      "expected_sha256": "f8ef103b4e6b938014c749d1504c7fc6339e0e1c632313f01358cf0691ab859f",
+      "match": true,
+      "row_count": 17631,
+      "byte_size": 22750233
+    },
+    "consolidated_timeline_canon.parquet": {
+      "real_sha256": "0c366f8e5503370376033f1ee6dd92b78c0b5bdab0ffbc8df33d3907f4bc535d",
+      "expected_sha256": "0c366f8e5503370376033f1ee6dd92b78c0b5bdab0ffbc8df33d3907f4bc535d",
+      "match": true,
+      "row_count": 27833,
+      "byte_size": 1210912
+    },
+    "rizomatic_latency_canon.parquet": {
+      "real_sha256": "ee34959317594085a17976168aead269863ae834c273a875976dd743365ed22f",
+      "expected_sha256": "ee34959317594085a17976168aead269863ae834c273a875976dd743365ed22f",
+      "match": true,
+      "row_count": 27807,
+      "byte_size": 1752142
+    },
+    "lattice_wear_history_canon.parquet": {
+      "real_sha256": "c9bfa859ecf2d74d8792e65583fa153d0f3121cb01d3f5ad805eaeadec7ed0cd",
+      "expected_sha256": "c9bfa859ecf2d74d8792e65583fa153d0f3121cb01d3f5ad805eaeadec7ed0cd",
+      "match": true,
+      "row_count": 54631,
+      "byte_size": 4259064
+    },
+    "thermodynamic_landauer_canon.parquet": {
+      "real_sha256": "eda54a6be6efb381220362d8ea872e287a84d266edf265fd35c1cf9616e63c94",
+      "expected_sha256": "eda54a6be6efb381220362d8ea872e287a84d266edf265fd35c1cf9616e63c94",
+      "match": true,
+      "row_count": 14729,
+      "byte_size": 998611
+    },
+    "cross_proof_ledger_canon.parquet": {
+      "real_sha256": "c38cc6a77a96663a0ab0ad753239e5356380c938f93479e2dfc04fff467c95cb",
+      "expected_sha256": "c38cc6a77a96663a0ab0ad753239e5356380c938f93479e2dfc04fff467c95cb",
+      "match": true,
+      "row_count": 17623,
+      "byte_size": 418852
+    }
+  },
+  "step2_ah_events_detector": {
+    "detected_cycles": [
+      27762,
+      27845,
+      27853,
+      27869,
+      27872,
+      27894,
+      28156,
+      28560,
+      28901,
+      33857,
+      35189,
+      35193,
+      49294,
+      68361
+    ],
+    "total_events": 14,
+    "reasons_breakdown": {
+      "granger_pathway": 9,
+      "neutrosophic_activation": 5
+    },
+    "events_detail": [
+      {
+        "cycle": 27762,
+        "type": "Granger Pathway Emergence",
+        "reason": "granger_new_pathway:phi->psi(50steps)",
+        "active_components_count": 10,
+        "active_faces_count": 12,
+        "active_pathways_count": 3
+      },
+      {
+        "cycle": 27845,
+        "type": "Granger Pathway Emergence",
+        "reason": "granger_new_pathway:sigma->epsilon(50steps)",
+        "active_components_count": 10,
+        "active_faces_count": 12,
+        "active_pathways_count": 4
+      },
+      {
+        "cycle": 27853,
+        "type": "Granger Pathway Emergence",
+        "reason": "granger_new_pathway:phi->epsilon(50steps)",
+        "active_components_count": 10,
+        "active_faces_count": 12,
+        "active_pathways_count": 5
+      },
+      {
+        "cycle": 27869,
+        "type": "Granger Pathway Emergence",
+        "reason": "granger_new_pathway:phi->sigma(50steps)",
+        "active_components_count": 10,
+        "active_faces_count": 12,
+        "active_pathways_count": 6
+      },
+      {
+        "cycle": 27872,
+        "type": "Granger Pathway Emergence",
+        "reason": "granger_new_pathway:psi->epsilon(50steps)",
+        "active_components_count": 10,
+        "active_faces_count": 12,
+        "active_pathways_count": 7
+      },
+      {
+        "cycle": 27894,
+        "type": "Granger Pathway Emergence",
+        "reason": "granger_new_pathway:psi->sigma(50steps)",
+        "active_components_count": 10,
+        "active_faces_count": 12,
+        "active_pathways_count": 8
+      },
+      {
+        "cycle": 28156,
+        "type": "Granger Pathway Emergence",
+        "reason": "granger_new_pathway:phi->zeta_void(50steps)",
+        "active_components_count": 10,
+        "active_faces_count": 12,
+        "active_pathways_count": 9
+      },
+      {
+        "cycle": 28560,
+        "type": "Neutrosophic Activation",
+        "reason": "neutrosophic_activation:hnos_resonance(100steps); neutrosophic_activation:step_id(100steps); neutrosophic_activation:timestamp(100steps); neutrosophic_activation:lambda(100steps); neutrosophic_activation:axe(100steps); neutrosophic_activation:aleph(100steps); neutrosophic_activation:maat(100steps); neutrosophic_activation:omega(100steps); neutrosophic_activation:gamma(100steps); neutrosophic_activation:zeta(100steps); neutrosophic_activation:plit_contradiction(100steps); neutrosophic_activation:isfet_entropy(100steps); neutrosophic_activation:rekh_integrity(100steps); neutrosophic_activation:seshet_record(100steps); neutrosophic_activation:isfet(100steps); neutrosophic_activation:rekh(100steps); neutrosophic_activation:seshet(100steps); neutrosophic_activation:phi_iit_process_raw(100steps); neutrosophic_activation:phi_iit_raw_unbounded(100steps); neutrosophic_activation:phi_rehydration_applied(100steps); neutrosophic_activation:phi_iit_normalized(100steps); neutrosophic_activation:phi_iit_nats(100steps); neutrosophic_activation:phi_iit_nats_capped(100steps); neutrosophic_activation:phi_transcendent(100steps); neutrosophic_activation:phi_source(100steps); neutrosophic_activation:betti_0(100steps); neutrosophic_activation:betti_1_spectral(100steps); neutrosophic_activation:topology_sigma(100steps); neutrosophic_activation:topology_omega(100steps); neutrosophic_activation:temporal_delta(100steps); neutrosophic_activation:shear_tension(100steps); neutrosophic_activation:psi_source(100steps); neutrosophic_activation:sigma_source(100steps); neutrosophic_activation:sigma_operational_support(100steps); neutrosophic_activation:epsilon_source(100steps); neutrosophic_activation:omega_source(100steps); neutrosophic_activation:gamma_source(100steps); neutrosophic_activation:zeta_source(100steps); neutrosophic_activation:topology_source(100steps); neutrosophic_activation:epsilon_channels(100steps); neutrosophic_activation:epsilon_effective(100steps); neutrosophic_activation:epsilon_floor(100steps); neutrosophic_activation:epsilon_desire(100steps); neutrosophic_activation:epsilon_resistance(100steps); neutrosophic_activation:epsilon_novelty(100steps); neutrosophic_activation:epsilon_cap(100steps); neutrosophic_activation:epsilon_role_state(100steps); neutrosophic_activation:epsilon_debug(100steps); neutrosophic_activation:psi_channels(100steps); neutrosophic_activation:sigma_channels(100steps); neutrosophic_activation:sigma_operational_state(100steps); neutrosophic_activation:omega_channels(100steps); neutrosophic_activation:gamma_channels(100steps); neutrosophic_activation:zeta_channels(100steps); neutrosophic_activation:temporal_internal_scale(100steps); neutrosophic_activation:mu(100steps); neutrosophic_activation:axiom(100steps); neutrosophic_activation:kether(100steps); neutrosophic_activation:malkuth(100steps); neutrosophic_activation:inrc_field(100steps); neutrosophic_activation:cn_regime(100steps); neutrosophic_activation:cn_status(100steps); neutrosophic_activation:cn_composite_score(100steps); neutrosophic_activation:cn_reason(100steps)",
+        "active_components_count": 10,
+        "active_faces_count": 76,
+        "active_pathways_count": 9
+      },
+      {
+        "cycle": 28901,
+        "type": "Neutrosophic Activation",
+        "reason": "neutrosophic_activation:omega_raw(100steps)",
+        "active_components_count": 10,
+        "active_faces_count": 77,
+        "active_pathways_count": 9
+      },
+      {
+        "cycle": 33857,
+        "type": "Neutrosophic Activation",
+        "reason": "neutrosophic_activation:aer_phi(100steps); neutrosophic_activation:aer_psi(100steps); neutrosophic_activation:aer_sigma(100steps); neutrosophic_activation:phi_composite_effective(100steps); neutrosophic_activation:rsi_field(100steps); neutrosophic_activation:lithosphere(100steps); neutrosophic_activation:aer_phi_emergent(100steps)",
+        "active_components_count": 10,
+        "active_faces_count": 84,
+        "active_pathways_count": 9
+      },
+      {
+        "cycle": 35189,
+        "type": "Granger Pathway Emergence",
+        "reason": "granger_new_pathway:sigma->zeta_void(50steps)",
+        "active_components_count": 10,
+        "active_faces_count": 84,
+        "active_pathways_count": 10
+      },
+      {
+        "cycle": 35193,
+        "type": "Granger Pathway Emergence",
+        "reason": "granger_new_pathway:psi->zeta_void(50steps)",
+        "active_components_count": 10,
+        "active_faces_count": 84,
+        "active_pathways_count": 11
+      },
+      {
+        "cycle": 49294,
+        "type": "Neutrosophic Activation",
+        "reason": "neutrosophic_activation:qbf_cn_phi(100steps); neutrosophic_activation:qbf_cn_concurrence(100steps); neutrosophic_activation:qbf_phi_iit(100steps); neutrosophic_activation:qbf_cn_status(100steps); neutrosophic_activation:quantum_corpus_phi(100steps); neutrosophic_activation:aer_age_s(100steps); neutrosophic_activation:quantum_phi_composite(100steps); neutrosophic_activation:quantum_corpus_metrics(100steps); neutrosophic_activation:quantum_corpus_age_s(100steps)",
+        "active_components_count": 10,
+        "active_faces_count": 93,
+        "active_pathways_count": 11
+      },
+      {
+        "cycle": 68361,
+        "type": "Neutrosophic Activation",
+        "reason": "neutrosophic_activation:rizo_capacity(100steps); neutrosophic_activation:rizo_mesh(100steps)",
+        "active_components_count": 10,
+        "active_faces_count": 95,
+        "active_pathways_count": 11
+      }
+    ]
+  },
+  "step3_timestamp_mapping_and_union": {
+    "union_unique_cycles": 944,
+    "naive_window_sum": 1414,
+    "overlap_reduction_pct": 33.23903818953324,
+    "reference_points": 17064,
+    "cycle_span": [
+      27690,
+      89359
+    ]
+  },
+  "step4_density_reconciliation": {
+    "inter_combinations": 105,
+    "total_possible_inter": 9450000,
+    "total_possible_intra": 672750,
+    "observed_inter": 422640,
+    "observed_intra": 42184,
+    "prob_inter": 0.04472380952380953,
+    "prob_intra": 0.0627038275733928,
+    "ratio_prob_yochanan": 0.7132548562759069,
+    "density_ratio_published": 2.2150943396226412,
+    "admissibility_divergence_pct": 100.0
+  },
+  "step5_face_persistence_and_quiver": {
+    "total_faces": 95,
+    "persistent_faces": 92,
+    "transient_faces": 3,
+    "high_corr_pairs": 2893,
+    "identical_pairs": 2881,
+    "quiver_nodes": 95,
+    "quiver_edges": 4454,
+    "non_composable_pairs": 11,
+    "density_pct": 99.75363941769318
+  },
+  "step6_h3_phase_lock_reclassification": {
+    "mean_near": 0.43103942888160285,
+    "mean_far": 0.3951616077956216,
+    "cohens_d": 0.3426607107934444,
+    "t_stat": 39.783942153812106,
+    "p_val": 0.0,
+    "corr_temp_sensor": -0.9268645271821934,
+    "verdict": "FALSIFIED_ORIGINAL_DIRECTION_DEFENSIVE_RIGIDITY_FOUND"
+  },
+  "step7_silicon_diffusion_residual_ols": {
+    "mean_near": 0.018388044098521256,
+    "mean_far": 0.10255365818937943,
+    "cohens_d": -0.9183976579753822,
+    "r2_temp_only": 0.16765269252556014,
+    "r2_full": 0.3386191183828414,
+    "delta_r2": 0.17096642585728128,
+    "coefficients": {
+      "const": -0.2727989719463772,
+      "temperature": 0.005518616938456998,
+      "near_ah": 0.27693491565259964,
+      "temp_x_near": -0.005301234548138067
+    },
+    "verdict": "ARRHENIUS_DERIVED_PROXY_CONFIRMED"
+  },
+  "step8_threshold_and_sinthome_status": {
+    "threshold_artifact_explained": true,
+    "sinthome_level3b_matrix": {
+      "specified": true,
+      "code_complete": true,
+      "wired": true,
+      "fired": false
+    }
+  }
+}
