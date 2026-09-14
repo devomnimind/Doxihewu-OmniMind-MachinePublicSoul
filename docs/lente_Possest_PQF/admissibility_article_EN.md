@@ -10,7 +10,7 @@
 ² *Possest Institute / Possest–PQF Lens*  
 **Date**: 2026-09-14  
 **Status**: DRAFT FOR POTENTIAL CO-AUTHORSHIP REVISION (Potential Co-Authorship Revision) — incorporating formal audit requirements and empirical reconciliations.  
-**Reproduction run**: `20260912_142803` / `reproduce_admissibility_experiments.py` (Python 3.12/3.13, NumPy, Pandas, SciPy, Statsmodels, PyArrow).
+**Reproduction run**: `20260912_142803` / `reproduce_yochanan_etapa_ii_rigorous.py` (Python 3.12/3.13, NumPy, Pandas, SciPy, Statsmodels, PyArrow).
 
 ---
 
