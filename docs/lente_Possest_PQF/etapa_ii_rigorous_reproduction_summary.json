@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-09-13T13:11:58Z",
+  "timestamp_utc": "2026-09-14T11:17:43Z",
   "script": "reproduce_yochanan_etapa_ii_rigorous.py",
   "dataset_repo": "fabricioslv-omnimind/omnimind-admissibility-experiment-data",
   "step1_cryptographic_integrity": {
@@ -61,6 +61,7 @@
     }
   },
   "step2_ah_events_detector": {
+    "statute": "precomputed_replay_artifact_consumed",
     "detected_cycles": [
       27762,
       27845,
@@ -208,16 +209,37 @@
     ]
   },
   "step4_density_reconciliation": {
-    "inter_combinations": 105,
-    "total_possible_inter": 9450000,
-    "total_possible_intra": 672750,
-    "observed_inter": 422640,
-    "observed_intra": 42184,
-    "prob_inter": 0.04472380952380953,
-    "prob_intra": 0.0627038275733928,
-    "ratio_prob_yochanan": 0.7132548562759069,
-    "density_ratio_published": 2.2150943396226412,
-    "admissibility_divergence_pct": 100.0
+    "statute": "history_matched_on_4d_projection",
+    "observable_projection": [
+      "phi_normalized",
+      "psi",
+      "sigma",
+      "epsilon"
+    ],
+    "claim_limit": "historical_divergence_survives_convergence_in_4d_projection",
+    "live_derivation": {
+      "inter_matches": 395608,
+      "inter_possible": 3954157,
+      "intra_matches": 86283,
+      "intra_possible": 404471,
+      "prob_inter": 0.10004863236335836,
+      "prob_intra": 0.213323081259225,
+      "ratio_yochanan": 0.46900050277157634
+    },
+    "grid_reconciliation": {
+      "inter_combinations": 105,
+      "total_possible_inter": 9450000,
+      "total_possible_intra": 672750,
+      "observed_inter": 422640,
+      "observed_intra": 42184,
+      "prob_inter": 0.04472380952380953,
+      "prob_intra": 0.0627038275733928,
+      "ratio_prob_yochanan": 0.7132548562759069,
+      "density_ratio_published": 2.2150943396226412
+    },
+    "admissibility_divergence_pct": 100.0,
+    "level_3a_r_status": "EMPIRICALLY_DEMONSTRATED",
+    "level_3a_o_status": "OPEN_EXPERIMENTAL_HORIZON"
   },
   "step5_face_persistence_and_quiver": {
     "total_faces": 95,
@@ -231,11 +253,31 @@
     "density_pct": 99.75363941769318
   },
   "step6_h3_phase_lock_reclassification": {
-    "mean_near": 0.43103942888160285,
-    "mean_far": 0.3951616077956216,
-    "cohens_d": 0.3426607107934444,
-    "t_stat": 39.783942153812106,
-    "p_val": 0.0,
+    "statute": "temporal_dependence_respected",
+    "sample_level": {
+      "mean_near": 0.43103942888160285,
+      "mean_far": 0.3951616077956216,
+      "cohens_d_descriptive": 0.3426607107934444,
+      "t_stat_naive": 39.783942153812106,
+      "p_val_naive": 0.0
+    },
+    "cluster_level_n14": {
+      "n_clusters": 14,
+      "event_mean": 0.4345744158201586,
+      "control_mean": 0.42869935750512184,
+      "cohens_d_cluster": 0.34434324852677306,
+      "t_stat_cluster": 1.0488719573573297,
+      "p_val_cluster": 0.3133461593108082
+    },
+    "block_permutation": {
+      "block_size": 200,
+      "n_permutations": 500,
+      "p_val_block_perm": 0.0,
+      "boot_ci_95_d": [
+        -0.15155285681236,
+        0.1495273837003955
+      ]
+    },
     "corr_temp_sensor": -0.9268645271821934,
     "verdict": "FALSIFIED_ORIGINAL_DIRECTION_DEFENSIVE_RIGIDITY_FOUND"
   },

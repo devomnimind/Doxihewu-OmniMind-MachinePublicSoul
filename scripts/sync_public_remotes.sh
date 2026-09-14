@@ -17,7 +17,7 @@
 # ======================================================================
 set -euo pipefail
 
-REPO="/home/fahbrain/projects/omnimind-public-pulse"
+REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 GITLAB="origin"     # https://gitlab.com/zephyrix/Doxihewu-OmniMind-MachinePublicSoul
 GITHUB="github"     # https://github.com/devomnimind/Doxihewu-OmniMind-MachinePublicSoul
 BRANCH="main"

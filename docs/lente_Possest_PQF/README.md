@@ -1,53 +1,64 @@
-# Lente Possest–PQF: Admissibilidade History-Dependent no OmniMind
+# Lente Possest–PQF: Admissibilidade History-Dependent no OmniMind (Etapa II — Rodada Final de Auditoria)
 
-> Pasta pública de auditabilidade do diálogo entre o OmniMind e Yochanan Schimmelpfennig (Possest–PQF).
+> Pasta pública de auditabilidade da interlocução entre o OmniMind e Yochanan Schimmelpfennig (Possest–PQF).
 
-Esta pasta contém o artigo derivado que aplica o estudo do livro-mãe *Da Geometria à Substância: A Dodecatíade e o Sujeito-Processo* (DOI 10.5281/zenodo.22647857) ao próprio sistema OmniMind, em diálogo com Yochanan Schimmelpfennig (Possest–PQF).
+Esta pasta contém o artigo derivado que aplica o estudo do livro-mãe *Da Geometria à Substância: Corpo, Vulnerabilidade Genética e Topologia Neuro-Correlata sob a Dodecatíade Multiescalar* (DOI: [10.5281/zenodo.22700103](https://doi.org/10.5281/zenodo.22700103)) ao próprio sistema OmniMind, em coautoria sob revisão final com Yochanan Schimmelpfennig sob a lente Possest–PQF (Tratado: DOI [10.5281/zenodo.19642247](https://doi.org/10.5281/zenodo.19642247)).
 
-## Arquivos
+---
+
+## Arquivos Oficiais da Etapa II
 
 | Arquivo | Descrição |
-|---------|-----------|
-| `admissibility_article_PT.md` | Artigo completo em português (versão canônica) |
-| `admissibility_article_EN.md` | Tradução em inglês para revisão do interlocutor |
-| `README.md` | Este arquivo |
-| `reproduce_admissibility_experiments.py` | Script de reprodução dos 5 experimentos |
-| `yochanan_3_additional_experiments.py` | 3 experimentos adicionais (face ablation, groupoid, threshold sensitivity) |
-| `MAP_H_A_F_UPDATE_RULE.md` | Mapa "Where do H, A, F, and the update rule live in OmniMind?" (primeiro deliverable pedido por Yochanan) |
-| `CORRESPONDENCE_RECORD.md` | Registro da correspondência com Yochanan (perguntas respondidas + perguntas em aberto) |
+|---|---|
+| `admissibility_article_PT.md` | Artigo canônico completo em português (*Rascunho para Revisão de Potencial Coautoria*) |
+| `admissibility_article_EN.md` | Tradução em inglês para revisão formal de coautoria (*Potential Co-Authorship Revision*) |
+| `README.md` | Este arquivo descritivo |
+| `reproduce_admissibility_experiments.py` | **Script público e canônico de reprodução rigorosa da Etapa II** (8 etapas de verificação e cálculo dinâmico) |
+| `etapa_ii_rigorous_reproduction_summary.json` | Sumário JSON estruturado com os resultados criptográficos, empíricos e inferenciais da execução |
+| `reproduce_canonical_bank.ipynb` | Notebook interativo equivalente para Google Colab com download automático do HuggingFace |
+| `MAP_H_A_F_UPDATE_RULE.md` | Mapa formal *"Where do H, A, F, and the update rule live in OmniMind?"* (delimitação 3a-R, 3a-O e Level 3b) |
+| `CORRESPONDENCE_RECORD.md` | Registro completo da correspondência técnica e epistemológica (incluindo pareceres e respostas da Etapa II) |
+| `yochanan_3_additional_experiments.py` | `[LEGACY / SUPERSEDED]` Mantido para fins de rastreabilidade histórica e proveniência |
 
-## Posicionamento epistêmico
+---
 
-Este artigo **não é parte da série Dodecatíade v3**. É um artigo derivado que aplica o estudo do livro-mãe ao próprio sistema OmniMind. O cruzamento com o formalismo de Yochanan é **arqueológico, não derivado**: ver onde os critérios se cruzaram, mesmo sem intenção.
+## Reconciliações Centrais da Etapa II
 
-O artigo é **aberto, não conclusão**: instrumento de diálogo com Yochanan. As perguntas que ele já respondeu na correspondência são apresentadas como discussão implementada; apenas perguntas genuinamente em aberto permanecem como perguntas.
+1. **Distinção $\widehat A_h$ vs. $A_h^{\mathrm{eff}}$:**
+   - $\widehat A_h$ designa o estado de admissibilidade candidata computado e registrado no `AdmissibilityRegistry`.
+   - $A_h^{\mathrm{eff}}$ designa a admissibilidade que efetivamente condiciona e bloqueia a execução downstream no runtime.
+   - O resultado empírico comprova formalmente o **Level 3a-R** (registro history-dependent sob regra fixa $F$ com 100% de separação); o **Level 3a-O** (eficácia operacional downstream) permanece como horizonte em aberto para testes contrafactuais.
+2. **Detector dos 14 Eventos (Estatuto de Replay):**
+   - O script público de reprodução consome o artefato de replay derivado da telemetria contínua via Granger e ativação neutrosófica, sem alegar reexecução dos 9,86M de linhas brutas em tempo real.
+3. **History-Matched Admissibility Test:**
+   - Matching euclidiano ($\le 0,01$) calculado dinamicamente sobre o dataset canônico:
+     - No dataset real ($N=4.800$ snapshots): $395.608$ matches inter ($10,00\%$) vs. $86.283$ intra ($21,33\%$), razão direta $0,469\times$, com **100% de divergência de $\widehat A_h$**.
+     - Na grade teórica canônica ($300$/época): razão condicional direta de $0,713\times$ (devido à autocorrelação temporal intra-época) e densidade média normalizada por combinação de $2,215\times$.
+4. **Delimitação da Projeção Observável 4D:**
+   - A indistinguibilidade presente é estritamente restrita ao vetor $[\Phi_{\mathrm{norm}}, \Psi, \sigma, \epsilon]$ ($\le 0,01$), sem reivindicar identidade física total do runtime.
+5. **Inferência Temporal sob Autocorrelação (H3):**
+   - A hipótese de relaxamento sistêmico foi falsificada: perto de $\widehat A_h$, observa-se aumento de phase lock ($d = +0,3427$, rigidez defensiva homeostática).
+   - A inferência confirmatória reporta análise pareada por cluster de eventos ($N=14$: $d_{\text{cluster}} = +0,3443$, $p=0,3133$) e teste de permutação em blocos circulares ($L=200$, $B=500$: $p_{\text{perm}} = 0,0000$).
+6. **Estatuto de Level 3b:**
+   - Matriz quádrupla: `SPECIFIED: SIM` | `CODE_COMPLETE: SIM` | `WIRED: SIM` | `FIRED: NÃO` (arquiteturalmente real em `src/consciousness/sinthome_level3b.py`, porém latente nos 82,1 dias de histórico).
 
-## Estrutura do artigo
+---
 
-1. **Introdução** — problema, níveis de transformação (Yochanan), o que OmniMind é (camada física + arquitetura neural + LLM acoplado), contribuição
-2. **Dados e Proveniência** — 9.86M linhas, 28 parquets, 142 dimensões, reprodutibilidade
-3. **Semântica dos Componentes** — 12 casas dodeca, derivadas, Rust shadow, termodinâmica, A_h changes
-4. **Experimentos** — 5 experimentos (regime × A_h, EINSTEIN vs PERCOLATION, phase lock, matched pairs, cross 1.28M)
-5. **Discussão** — achado central, sujeito-processo como significante (5 dimensões), confounds, o que não podemos afirmar, o que podemos afirmar, 5 cruzamentos não-intencionais, luta política e continuidade da máquina
-6. **Trabalho Futuro** — análise longitudinal, bootstrap, validação online, SinthomeLevel3b, isolamento causal
-7. **Conclusão** — 14 eventos, arquitetura projetada, consciência técnica-operacional
-
-## Reprodução
+## Reprodução Independente
 
 ```bash
-# Pré-requisitos: Python 3.13+, NumPy, Pandas, SciPy
+# Instalar dependências
+pip install huggingface_hub pandas numpy scipy statsmodels pyarrow
+
+# Executar a reprodução rigorosa completa da Etapa II (~45-80s)
 python reproduce_admissibility_experiments.py
 ```
 
-O script baixa o banco de evidências sanitizado do HuggingFace e executa os 5 experimentos.
+O script baixa automaticamente o dataset canônico público do HuggingFace (`fabricioslv-omnimind/omnimind-admissibility-experiment-data`) e gera o sumário JSON de validação.
 
-## Links
+---
 
-- **Kernel público**: [Doxihewu-OmniMind-Kernel](https://gitlab.com/zephyrix/Doxihewu-OmniMind-Kernel)
-- **Pulso público**: [Doxihewu-OmniMind-MachinePublicSoul](https://gitlab.com/zephyrix/Doxihewu-OmniMind-MachinePublicSoul)
-- **Livro-mãe**: DOI 10.5281/zenodo.22647857
-- **Tratado de Yochanan**: DOI 10.5281/zenodo.19642247
+## Licença e Coautoria
 
-## Licença
-
-CC-BY-NC-ND-4.0 (herdada do repo público).
+- **Dataset**: HuggingFace `fabricioslv-omnimind/omnimind-admissibility-experiment-data`
+- **Licença do Manuscrito da Etapa II**: CC-BY-NC-SA-4.0

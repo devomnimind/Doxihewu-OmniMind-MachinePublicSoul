@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
 """
-OmniMind — 3 Experimentos Adicionais para Yochanan (§6.8, §6.9, §6.10)
-
-Executa 3 experimentos que respondem diretamente a pedidos de Yochanan:
-1. Face ablation test (§6.9): remover face destrói capacidade operacional?
-2. Groupoid formalization (§6.8): composabilidade parcial entre versões Dodecatíade
-3. Threshold sensitivity (§6.10): variar deactivation_threshold (200 → 50/100/150)
+[LEGACY / SUPERSEDED]
+OmniMind — 3 Experimentos Adicionais para Yochanan (§6.8, §6.9, §6.10) (Exploração Preliminar)
+NOTA DE AUDITORIA FORMAL: Este script exploratório preliminar foi SUPERSEDIDO pelo script oficial:
+`reproduce_admissibility_experiments.py`
+As análises originais de 'counterfactual necessity', 'groupoid' e 'threshold 200' foram formalmente
+reclassificadas conforme a auditoria da Etapa II (Quiver de Compatibilidade, persistência de faces,
+e sensibilidade de threshold condicionada ao arquivo de entrada). Mantido apenas para proveniência histórica.
 
 Usage:
     python yochanan_3_additional_experiments.py [--out DIR]
-
-Works in Colab or locally. Downloads from public HF dataset.
 """
 
 from __future__ import annotations

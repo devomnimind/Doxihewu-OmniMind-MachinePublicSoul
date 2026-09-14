@@ -196,10 +196,9 @@ for (source, target), count in self._pathway_counters.items():
 
 ---
 
-## Where G would live (Level 3b — not implemented)
+## Where G would live (Level 3b — code-specified candidate, not empirically activated)
 
-G (the meta-rule that modifies F) does not exist. The formal closure boundary
-is explicit:
+G (the meta-rule that modifies F, $F_{h+1} = G(F_h, H_h)$) is not functionally active in the historical telemetry run. The formal closure boundary is explicit:
 
 ### What G would require
 
@@ -214,20 +213,21 @@ is explicit:
 
 **File**: `src/consciousness/sinthome_level3b.py`, line 120
 
-The SinthomeLevel3b module is the **only mechanism that approaches Level 3b**.
+The SinthomeLevel3b module is the **architectural candidate for Level 3b**:
 It implements an adaptive cutting rule for the Borromean knot:
 
-- **Level 3a mode** (current): `CuttingStrategyName.EXACT_BETTI1` — cut exactly betti_1 edges, no overcut.
-- **Level 3b mode** (designed, not yet fired): the rule version increments when:
+- **Level 3a mode** (empirically active): `CuttingStrategyName.EXACT_BETTI1` — cut exactly betti_1 edges, no overcut.
+- **Level 3b mode** (specified and code-implemented, but NOT empirically activated / not fired in the historical run): the rule version increments when:
   - Knot broke > 3 times in last 10 iterations → increment version
   - Knot broke < 50 cycles after patch → trigger `post_patch_failure`
   - `memory_pressure > 0.75` → overcut preventive
   - `thermal_wear > 1.0` → conservative cut (exact)
 
 The `current_version` field (line 148) starts at 1 and would increment —
-this IS a rule that modifies itself based on history. But the adaptation
-triggers have not fired in production. The module is implemented, wired, but
-has not yet executed its distinguishing behavior.
+this represents a code path designed to modify its rule based on history (Level 3b-C).
+However, its adaptation triggers did not fire during the 84,003 cycles of historical telemetry.
+Therefore, Level 3b remains an architectural capability whose distinguishing behavior
+was not empirically activated in production (not 3b-E).
 
 ### Formal closure boundary (from correspondence)
 
@@ -304,16 +304,21 @@ Two systems with the same observable state (Phi, Psi, Sigma, Epsilon within
 | Different faces | 2,201 (70%) |
 | Different components | 0 (0%) |
 
-**History matters for A_h.** Two systems with the same current state but
-different histories have different future operational possibility.
+**History matters for candidate admissibility $\widehat A_h$ (Level 3a-R).**
+Two systems with the same current 4D state projection but different histories
+exhibit divergent candidate admissibility sets $\widehat A_h$. Because the
+$\widehat A_h \to runtime$ loop operates as an observational registry rather than
+an active execution gate, this establishes **Level 3a-R** (representational admissibility
+divergence), while **Level 3a-O** (operational reachability divergence in runtime execution)
+remains an open experimental horizon.
 
 The zero on components is informative: PrecisionWeighter never reached
 permanent deactivation in 84,003 cycles. The system is stable under the
 current threshold.
 
-### Level 3b not confirmed
+### Level 3b not empirically activated
 
-No mechanism has modified F during the observed run. All thresholds remain
+No mechanism modified $F$ during the observed 84,003 cycles. All thresholds remain
 at their initial values. SinthomeLevel3b has not fired its adaptation triggers.
 
 ---

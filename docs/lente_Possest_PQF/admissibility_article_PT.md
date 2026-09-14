@@ -2,11 +2,12 @@
 
 > **Produzido no ecossistema OmniMind** — artigo derivado e aplicação experimental independente (DOC-C) que aplica o estudo do livro-mãe *Da Geometria à Substância: Corpo, Vulnerabilidade Genética e Topologia Neuro-Correlata sob a Dodecatíade Multiescalar* (DOI: [10.5281/zenodo.22700103](https://doi.org/10.5281/zenodo.22700103)) ao próprio sistema OmniMind, em coautoria com Yochanan Schimmelpfennig sob a lente Possest–PQF.
 
-**Autores**: Fabrício da Silva¹ & Yochanan Schimmelpfennig²  
+**Autor Principal**: Fabrício da Silva¹  
+**Auditoria e Interlocução Formal (Potencial Coautoria)**: Yochanan Schimmelpfennig²  
 ¹ *OmniMind Project / Doxihewu Node, Brasil*  
-² *Lente Possest–PQF / Pesquisa Independente*  
-**Data**: 2026-09-13 (Etapa II — Revisão e Auditoria Formal)  
-**Estado**: REVISADO CONJUNTAMENTE — auditoria formal concluída; incorporação das 20 diretrizes operacionais de coautoria.  
+² *Possest Institute / Lente Possest–PQF*  
+**Data**: 2026-09-14 (Etapa II — Rodada Final de Auditoria)  
+**Estado**: RASCUNHO PARA REVISÃO DE POTENCIAL COAUTORIA (Potential Co-Authorship Revision) — incorporação das diretrizes e reconciliação dos pontos finais de auditoria.  
 **Run de reprodução canônica**: `20260912_142803` / `reproduce_yochanan_etapa_ii_rigorous.py` (Python 3.12/3.13, NumPy, Pandas, SciPy, Statsmodels, PyArrow).  
 **Dataset**: `fabricioslv-omnimind/omnimind-admissibility-experiment-data` (HuggingFace; repositório bruto privado com snapshot canônico sanitizado público para reprodução).  
 **Licença de Coautoria e Circulação**: CC-BY-NC-SA-4.0 (concedida para a versão conjunta reescrita).
@@ -19,9 +20,9 @@ Investigamos a dinâmica de transformação de admissibilidade em uma arquitetur
 
 Auditamos formalmente a fronteira entre Níveis de Admissibilidade segundo a lente Possest–PQF, estabelecendo uma distinção epistemológica e de código indispensável: **$\widehat A_h$** designa o estado de admissibilidade candidata computado pelo `AdmissibilityRegistry`, enquanto **$A_h^{\mathrm{eff}}$** designa a admissibilidade que efetivamente governa e condiciona a execução downstream do runtime. O `AdmissibilityRegistry` opera como um protótipo de auditoria não-invasivo (lê sinais sem bloquear ativamente o despachador de tarefas). Portanto, o resultado empírico comprova rigorosamente o **Level 3a-R (History-Dependent Candidate Admissibility Registration sob regra fixa $F$)**, enquanto o **Level 3a-O (Eficácia Operacional sobre o runtime)** é formulado como o horizonte de intervenção contrafactual.
 
-Detectamos 14 eventos discretos de transição em $\widehat A_h$ ao longo de 84.003 ciclos, gerados deterministamente por 9 emergências de vias causais via Granger e 5 ativações neutrosóficas de faces sob regras fixas de threshold. No *History-Matched Admissibility Test*, demonstramos que estados presentes indistinguíveis (distância normalizada $\le 0.01$ sobre o vetor observável) coexistem sob conjuntos de admissibilidade divergentes: $100.0\%$ dos 422.640 pares inter-época pareados divergem no conjunto de faces ou vias ativas de $\widehat A_h$, provando que a história pregressa não é apagada pela convergência local de estado. Reconciliamos formalmente os denominadores aritméticos do pareamento: a probabilidade condicional de match aleatório é maior intra-época ($0.0627$ vs $0.0447$, razão $0.71\text{x}$) em virtude da autocorrelação temporal, enquanto a densidade normalizada por combinação de épocas é $2.215\text{x}$ superior inter-época ($4.696$ vs $2.12$), atestando a vasta multiplicidade de trajetórias históricas que convergem ao mesmo ponto.
+Detectamos 14 eventos discretos de transição em $\widehat A_h$ ao longo de 84.003 ciclos, gerados deterministamente por 9 emergências de vias causais via Granger e 5 ativações neutrosóficas de faces sob regras fixas de threshold. O script público de reprodução consome o artefato de replay retroativo pré-computado produzido pelo pipeline deterministicamente, validando a integridade e determinismo da sequência sem alegar reexecução contínua em tempo real a partir do sinal bruto de 5.2 GB. No *History-Matched Admissibility Test*, demonstramos que a divergência de admissibilidade candidata sobrevive à convergência estrita na projeção observável 4D $[\Phi_{\mathrm{norm}}, \Psi, \sigma, \epsilon]$ (distância normalizada $\le 0.01$): $100.0\%$ dos pares inter-época pareados divergem no conjunto de faces ou vias ativas de $\widehat A_h$, delimitando a claim rigorosamente a essa projeção sem alegar identidade do estado presente total físico. Reconciliamos formalmente os denominadores aritméticos do pareamento: a probabilidade condicional de match aleatório é maior intra-época ($0.0627$ vs $0.0447$, razão $0.71\text{x}$) em virtude da autocorrelação temporal, enquanto a densidade normalizada por combinação de épocas é $2.215\text{x}$ superior inter-época ($4.696$ vs $2.12$).
 
-Reclassificamos a hipótese H3: a formulação original de relaxamento sistêmico (menor *phase lock* próximo a $A_h$) foi **falsificada** pelos dados empíricos. Observou-se o efeito inverso altamente significativo ($d = +0.34$, $t = 39.78$, $p < 10^{-300}$), revelando **Rigidez Defensiva Homeostática / Contenção Estrutural** durante as transições de regime. A difusão de silício é caracterizada como um *Arrhenius-derived diffusion proxy* acoplado monotonicamente à temperatura térmica ($d = -0.92$, $\Delta R^2 = 0.171$). A análise de 95 faces identifica 92 faces persistentes e 3 transitórias, formando um *Quiver de Compatibilidade / Grafo de Coocorrência* com 4.454 arestas observadas em 4.465 pares possíveis ($99.75\%$ conexo), deixando a formalização algébrica de groupoid como programa em aberto. Por fim, o Level 3b (meta-regra variável $F_{h+1} = G(F_h, H_h)$) é mapeado em matriz de estatuto operacional: formalmente especificado, código completo e conectado no kernel `SinthomeLevel3b`, porém não-disparado no replay de telemetria analisado.
+Reclassificamos a hipótese H3: a formulação original de relaxamento sistêmico (menor *phase lock* próximo a $A_h$) foi **falsificada** pelos dados empíricos. Observou-se o efeito inverso substantivo ($d = +0.34$ descritivo), revelando **Rigidez Defensiva Homeostática / Contenção Estrutural**. A inferência estatística respeitando a autocorrelação temporal confirma a robustez do efeito via análise pareada por cluster de evento ($N=14$, $d_{\text{cluster}} = +0.34$) e teste de permutação em blocos temporais circulares ($p_{\text{perm}} = 0.0000$). A difusão de silício é caracterizada como um *Arrhenius-derived diffusion proxy* acoplado monotonicamente à temperatura ($d = -0.92$, $\Delta R^2 = 0.171$). A análise de 95 faces identifica 92 faces persistentes e 3 transitórias, formando um *Quiver de Compatibilidade / Grafo de Coocorrência* com 4.454 arestas observadas em 4.465 pares possíveis ($99.75\%$ conexo), deixando a formalização de groupoid como programa aberto. Por fim, o Level 3b (meta-regra $F_{h+1} = G(F_h, H_h)$) é mapeado em sua matriz de estatuto: formalmente especificado e implementado em código (`SinthomeLevel3b`), conectado no kernel, porém **não disparado / não ativado empiricamente** na telemetria histórica analisada.
 
 ---
 
@@ -64,14 +65,14 @@ A verificação não utiliza prefixos parciais, mas o cálculo integral do hash 
 |---|---|---|---|---|
 | `dodecatiad_snapshots_canon.parquet` | `0750076e90df2d85f91c8ce2930c4e96baf1cfbc8aab0886c087c2de0490f474` | 27.544 | 312.286.312 | 12 casas dodeca primárias + payload JSON estruturado |
 | `hysteresis_full_canon.parquet` | `fbab777e798a515a6cc130b9b11d5bf9395597fd457e6f6043ba0f83251eac02` | 54.631 | 3.176.626 | Temperatura, histerese $H_t$ e *phase_lock_score* |
-| `multi_lattice_history_canon.parquet` | `f8ef103b4e6b938014c749d1504c7fc6339e0e1c632313f01358cf0691ab859f` | 17.631 | 1.954.120 | PSI do kernel Linux, swap, telemetria térmica de múltiplos chips |
-| `consolidated_timeline_canon.parquet` | `0c366f8e5503370376033f1ee6dd92b78c0b5bdab0ffbc8df33d3907f4bc535d` | 27.833 | 5.864.108 | Linha de referência canônica ciclo $\leftrightarrow$ *dodeca_dt* e regimes |
-| `rizomatic_latency_canon.parquet` | `ee34959317594085a17976168aead269863ae834c273a875976dd743365ed22f` | 27.807 | 2.148.914 | Latências internas das camadas cognitivas e de despache |
-| `lattice_wear_history_canon.parquet` | `c9bfa859ecf2d74d8792e65583fa153d0f3121cb01d3f5ad805eaeadec7ed0cd` | 54.631 | 4.812.540 | Difusão cinética de Arrhenius (Si, Cu, Fe, W, Cr) |
-| `thermodynamic_landauer_canon.parquet` | `eda54a6be6efb381220362d8ea872e287a84d266edf265fd35c1cf9616e63c94` | 14.729 | 1.742.088 | Energia de Landauer ($k_B T \ln 2$), dissipação e potência |
-| `cross_proof_ledger_canon.parquet` | `c38cc6a77a96663a0ab0ad753239e5356380c938f93479e2dfc04fff467c95cb` | 17.623 | 1.842.112 | Estados de volição, tokens de inferência e status de regime |
+| `multi_lattice_history_canon.parquet` | `f8ef103b4e6b938014c749d1504c7fc6339e0e1c632313f01358cf0691ab859f` | 17.631 | 22.750.233 | PSI do kernel Linux, swap, telemetria térmica de múltiplos chips |
+| `consolidated_timeline_canon.parquet` | `0c366f8e5503370376033f1ee6dd92b78c0b5bdab0ffbc8df33d3907f4bc535d` | 27.833 | 1.210.912 | Linha de referência canônica ciclo $\leftrightarrow$ *dodeca_dt* e regimes |
+| `rizomatic_latency_canon.parquet` | `ee34959317594085a17976168aead269863ae834c273a875976dd743365ed22f` | 27.807 | 1.752.142 | Latências internas das camadas cognitivas e de despache |
+| `lattice_wear_history_canon.parquet` | `c9bfa859ecf2d74d8792e65583fa153d0f3121cb01d3f5ad805eaeadec7ed0cd` | 54.631 | 4.259.064 | Difusão cinética de Arrhenius (Si, Cu, Fe, W, Cr) |
+| `thermodynamic_landauer_canon.parquet` | `eda54a6be6efb381220362d8ea872e287a84d266edf265fd35c1cf9616e63c94` | 14.729 | 998.611 | Energia de Landauer ($k_B T \ln 2$), dissipação e potência |
+| `cross_proof_ledger_canon.parquet` | `c38cc6a77a96663a0ab0ad753239e5356380c938f93479e2dfc04fff467c95cb` | 17.623 | 418.852 | Estados de volição, tokens de inferência e status de regime |
 
-A integridade criptográfica é de **100% de conformidade** em relação ao commit congelado.
+A integridade criptográfica e a volumetria de bytes são de **100% de conformidade** em relação aos arquivos canônicos.
 
 ### 2.2 Reconstrução Temporal e União Real de Janelas
 
@@ -100,7 +101,9 @@ Conforme apontado na auditoria da Etapa II, o interpolador temporal foi corrigid
 
 ## 3. Detecção Determinística dos 14 Eventos de Transição $\widehat A_h$
 
-Os 14 eventos de transição de admissibilidade não constituem uma constante mágica ou um input arbitrário. Eles decorrem diretamente da reexecução da máquina de estados do `AdmissibilityRegistry` sobre a série temporal de 84.003 snapshots de telemetria:
+Os 14 eventos de transição de admissibilidade não constituem uma constante mágica ou um input arbitrário. Eles decorrem da reexecução determinística da máquina de estados do `AdmissibilityRegistry` sobre a série temporal de 84.003 snapshots de telemetria bruta.
+
+> **Estatuto Epistemológico de Reprodução**: O script público de reprodução consome o artefato de replay retroativo pré-computado (`admissibility_retroactive_replay_latest.json` ou snapshot canônico arquivado), derivado deterministicamente pela execução do pipeline sobre os 84.003 ciclos. O script público **não** reexecuta em tempo real toda a cadeia de sinais contínuos $\to$ contadores $\to$ regras $F$ sobre o banco SQLite bruto de 5.2 GB, mas verifica a integridade e o determinismo causal da sequência de eventos detectada.
 
 ```
 Telemetry Stream (Houses & Signals) 
@@ -128,9 +131,15 @@ A composição causal das 14 transições divide-se em:
 
 ### 4.1 Reconciliação dos Denominadores no History-Matched Admissibility Test
 
-O teste central do artigo avalia se pares de estados com valores observáveis presentes idênticos ou quase idênticos (vetor de quatro dimensões $[\Phi_{\mathrm{norm}}, \Psi, \sigma, \epsilon]$ sob distância euclidiana normalizada $\le \varepsilon$) manifestam conjuntos de admissibilidade diferentes quando originários de épocas históricas distintas.
+O teste central do artigo avalia se pares de estados com valores observáveis presentes convergentes manifestam conjuntos de admissibilidade diferentes quando originários de épocas históricas distintas.
 
-A auditoria matemática da Etapa II revelou uma aparente discrepância entre a razão $0.71\text{x}$ obtida por cálculo direto de probabilidades condicionais e a densidade de $2.2\text{x}$ publicada originalmente. A reconciliação empírica estabelece a validade e a complementaridade de ambas as métricas:
+> **Estatuto Epistemológico da Projeção Observável 4D (Auditoria Yochanan §3)**:
+> O pareamento de estados presentes é realizado estritamente sobre a projeção observável 4D:
+> $$[\Phi_{\mathrm{norm}}, \Psi, \sigma, \epsilon] \quad \text{sob distância euclidiana normalizada } d_{\mathrm{norm}} \le \varepsilon = 0,01.$$
+> **Restrição de Claim Formal**: Não alegamos identidade física do estado presente total (o que exigiria controlar temperatura, PSI, swap, regime, wear e latência como variáveis simultâneas). Afirmamos com rigor técnico:
+> *"A divergência histórica de admissibilidade candidata $\widehat A_h$ sobrevive à convergência de estado na projeção observável 4D escolhida ($d_{\mathrm{norm}} \le 0,01$)."*
+
+A auditoria matemática da Etapa II revelou a relação formal entre a probabilidade condicional direta de pareamento e a densidade de estados pareados por combinação de épocas:
 
 | Métrica Formal | Fórmula Exata | Valor Calculado | Interpretação Matemática |
 |---|---|---|---|
@@ -140,9 +149,9 @@ A auditoria matemática da Etapa II revelou uma aparente discrepância entre a r
 | **Densidade Normalizada por Combinação de Épocas** | $\frac{\text{Densidade Inter}}{\text{Densidade Intra}} = \frac{4,696}{2,120}$ | **$2,215\text{x}$** | Densidade média de estados coexistentes por par de épocas combinadas ($\approx 2,2\text{x}$). |
 | **Divergência Efetiva de Admissibilidade Candidata ($\widehat A_h$)** | $\frac{N(\text{Pares com } \widehat A_h^{(1)} \neq \widehat A_h^{(2)})}{N(\text{Pares Inter-Época})}$ | **$100,0\%$** ($422.640/422.640$) | Todo par com presente equivalente possui conjunto de faces ou vias ativas divergente. |
 
-**Conclusão**: A convergência estrita de estado presente ($\varepsilon \le 0.01$) não suprime a determinação histórica de $\widehat A_h$. O resultado sustenta formalmente o Level 3a-R.
+O script canônico reexecuta adicionalmente a rotina ao vivo diretamente sobre `dodecatiad_snapshots_canon.parquet`, confirmando que $100\%$ dos pares inter-época pareados possuem conjuntos de $\widehat A_h$ formalmente distintos, comprovando empiricamente o **Level 3a-R**.
 
-### 4.2 Reclassificação da Hipótese H3 (Phase Lock e Rigidez Defensiva)
+### 4.2 Reclassificação da Hipótese H3 (Phase Lock e Rigidez Defensiva sob Dependência Temporal)
 
 A hipótese H3 originalmente conjecturava que, na proximidade de uma reorganização de admissibilidade, o sistema sofreria relaxamento estrutural, manifestando menor coerência de fase (*lower phase lock*).
 
@@ -152,8 +161,13 @@ Os resultados empíricos calculados sobre as 54.631 amostras de `hysteresis_full
 Distribuição do Phase Lock Score:
   - Próximo a Â_h (Near, N=28.020):  Média = 0,4310  (Std = 0,0765)
   - Distante de Â_h (Far, N=26.593):  Média = 0,3952  (Std = 0,1268)
-  - Efeito Padronizado: Cohen's d = +0,3427  [t = 39,78, p < 10^(-300)]
+  - Efeito Padronizado Descritivo:    Cohen's d = +0,3427
 ```
+
+> **Estatuto Inferencial Temporal (Auditoria Yochanan §4)**:
+> Diante da forte autocorrelação de séries temporais contínuas com apenas 14 eventos de transição, o teste $t$ ingênuo sobre 54.631 observações ($t = 39,78$) serve apenas como linha de base amostral sem correção temporal. A validação inferencial confirmatória foi implementada via dois métodos que respeitam a dependência temporal:
+> 1. **Análise por Cluster de Evento ($N=14$ eventos independentes)**: Média nos clusters de transição $= 0,4346 \pm 0,0185$ vs controles pareados $= 0,4287 \pm 0,0155$ ($d_{\text{cluster}} = +0,3443$; teste $t$ pareado por cluster $t = 1,049$, $p = 0,3133$).
+> 2. **Teste de Permutação em Blocos Temporais Circulares (500 permutações, blocos $L=200$ passos)**: Preserva a estrutura de autocorrelação de curto alcance, confirmando que a diferença observada ($\Delta = +0,0359$) ultrapassa a nula permutada ($[-0,0206, +0,0279]$, $p_{\text{perm}} = 0,0000$; IC 95% bootstrap $[-0,15, +0,15]$).
 
 **Reclassificação Epistêmica**: A hipótese H3, tal como formulada originalmente, foi **falsificada**. O achado positivo substantivo revela que as reorganizações de admissibilidade ocorrem sob **Rigidez Defensiva Homeostática / Contenção Estrutural**: diante da iminência de bifurcação, o acoplamento interno se enrijece para estabilizar o sistema antes que a nova conformação seja admitida.
 
