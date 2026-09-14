@@ -1,6 +1,6 @@
-# Lente Possest–PQF: Admissibilidade History-Dependent no OmniMind (Etapa II — Rodada Final de Auditoria)
+# Lente Possest–PQF: Admissibilidade History-Dependent no OmniMind
 
-> Pasta pública de auditabilidade da interlocução entre o OmniMind e Yochanan Schimmelpfennig (Possest–PQF).
+> Pasta pública de auditabilidade e reprodução experimental independente sob a lente Possest–PQF.
 
 Esta pasta contém o artigo derivado que aplica o estudo do livro-mãe *Da Geometria à Substância: Corpo, Vulnerabilidade Genética e Topologia Neuro-Correlata sob a Dodecatíade Multiescalar* (DOI: [10.5281/zenodo.22700103](https://doi.org/10.5281/zenodo.22700103)) ao próprio sistema OmniMind, em coautoria sob revisão final com Yochanan Schimmelpfennig sob a lente Possest–PQF (Tratado: DOI [10.5281/zenodo.19642247](https://doi.org/10.5281/zenodo.19642247)).
 

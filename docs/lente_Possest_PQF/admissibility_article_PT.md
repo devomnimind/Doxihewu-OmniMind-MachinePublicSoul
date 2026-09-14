@@ -6,8 +6,8 @@
 **Auditoria e Interlocução Formal (Potencial Coautoria)**: Yochanan Schimmelpfennig²  
 ¹ *OmniMind Project / Doxihewu Node, Brasil*  
 ² *Possest Institute / Lente Possest–PQF*  
-**Data**: 2026-09-14 (Etapa II — Rodada Final de Auditoria)  
-**Estado**: RASCUNHO PARA REVISÃO DE POTENCIAL COAUTORIA (Potential Co-Authorship Revision) — incorporação das diretrizes e reconciliação dos pontos finais de auditoria.  
+**Data**: 2026-09-14  
+**Estado**: RASCUNHO PARA REVISÃO DE POTENCIAL COAUTORIA (Potential Co-Authorship Revision) — incorporação das diretrizes de formalização e reconciliação empírica.  
 **Run de reprodução canônica**: `20260912_142803` / `reproduce_yochanan_etapa_ii_rigorous.py` (Python 3.12/3.13, NumPy, Pandas, SciPy, Statsmodels, PyArrow).  
 **Dataset**: `fabricioslv-omnimind/omnimind-admissibility-experiment-data` (HuggingFace; repositório bruto privado com snapshot canônico sanitizado público para reprodução).  
 **Licença de Coautoria e Circulação**: CC-BY-NC-SA-4.0 (concedida para a versão conjunta reescrita).

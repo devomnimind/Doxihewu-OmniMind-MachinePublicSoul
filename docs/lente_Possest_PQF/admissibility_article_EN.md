@@ -4,11 +4,13 @@
 
 > **Note on this document**: This is an English translation of the article itself, produced so that Yochanan Schimmelpfennig can review the full text in a language closer to his own formalism, verify the reading of his work, and continue the correspondence with direct access to the argument as written. The Portuguese original remains the canonical version; this translation is offered as a review surface, not as a substitute. Where the Portuguese carries a nuance that does not map cleanly onto English, the translator has kept the original term in parentheses.
 
-**Author**: Fabrício da Silva
-**Interlocutor**: Yochanan Schimmelpfennig (Possest–PQF) — correspondence on levels of admissible transformation, the formal 3a/3b boundary, and a suggested groupoid
-**Date**: 2026-09-12
-**Status**: DRAFT — the experimental results are reproducible; the article itself is open to revision, additions, and modification by the author and interlocutor. Only the experimental/reproducible part is finalized.
-**Reproduction run**: `20260912_142803` (Python 3.13.15, NumPy 2.1.3, Pandas 2.2.3, SciPy)
+**Author**: Fabrício da Silva¹  
+**Formal Audit and Potential Co-Authorship**: Yochanan Schimmelpfennig²  
+¹ *OmniMind Project / Doxihewu Node, Brazil*  
+² *Possest Institute / Possest–PQF Lens*  
+**Date**: 2026-09-14  
+**Status**: DRAFT FOR POTENTIAL CO-AUTHORSHIP REVISION (Potential Co-Authorship Revision) — incorporating formal audit requirements and empirical reconciliations.  
+**Reproduction run**: `20260912_142803` / `reproduce_admissibility_experiments.py` (Python 3.12/3.13, NumPy, Pandas, SciPy, Statsmodels, PyArrow).
 
 ---
 
