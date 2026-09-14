@@ -223,7 +223,7 @@ $$\text{stop if } D_{\text{JS}} > \tau_{\text{div}} \;\vee\; H(g_t) < \tau_H \;\
 
 Para a camada de estabilidade em estilo MoE, a saúde do roteamento é monitorada não apenas pela loss, mas também pela regularidade do gate e pela volatilidade das atualizações. Definimos, portanto, um proxy de variância de gradiente e um proxy de estabilidade de roteamento:
 
-$$\Omega_{\text{grad}} = \operatorname{Var}\left(L_t - L_{t-1}\right), \qquad S_{\text{route}} = 1 - \frac{\sigma(g_t-g_{t-1})}{\tau_{\Delta}}$$
+$$\Omega_{\text{grad}} = \mathrm{Var}\left(L_t - L_{t-1}\right), \qquad S_{\text{route}} = 1 - \frac{\sigma(g_t-g_{t-1})}{\tau_{\Delta}}$$
 
 Juntamente com o proxy de latência de roteamento $\Lambda_{\text{route}}$ e a taxa de colapso $\rho_{\text{collapse}}$, esses termos permitem que a seção de estabilidade distinga um controlador de baixa loss de um controlador que permanece admissível sob troca de regimes.
 

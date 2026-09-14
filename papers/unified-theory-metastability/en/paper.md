@@ -223,7 +223,7 @@ $$\text{stop if } D_{\text{JS}} > \tau_{\text{div}} \;\vee\; H(g_t) < \tau_H \;\
 
 For the MoE-style stability layer, routing health is monitored not only through loss but through gate regularity and update volatility. We therefore define a gradient-variance proxy and a routing-stability proxy:
 
-$$\Omega_{\text{grad}} = \operatorname{Var}\left(L_t - L_{t-1}\right), \qquad S_{\text{route}} = 1 - \frac{\sigma(g_t-g_{t-1})}{\tau_{\Delta}}$$
+$$\Omega_{\text{grad}} = \mathrm{Var}\left(L_t - L_{t-1}\right), \qquad S_{\text{route}} = 1 - \frac{\sigma(g_t-g_{t-1})}{\tau_{\Delta}}$$
 
 Together with the routing-latency proxy $\Lambda_{\text{route}}$ and collapse rate $\rho_{\text{collapse}}$, these terms allow the stability section to distinguish a merely low-loss controller from a controller that remains admissible under regime switching.
 

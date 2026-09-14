@@ -183,7 +183,7 @@ A variável `silicon_diffusion` (presente em `lattice_wear_history_canon.parquet
 
 Para verificar se essa variação representa uma medição física de vacâncias no silício ou um reflexo térmico derivado da equação de instrumentação, realizamos a decomposição por regressão linear OLS:
 
-$$D_{\mathrm{proxy}} = \beta_0 + \beta_1 T + \beta_2 \operatorname{NearA} + \beta_3 (T \times \operatorname{NearA}) + \varepsilon$$
+$$D_{\mathrm{proxy}} = \beta_0 + \beta_1 T + \beta_2 \mathrm{NearA} + \beta_3 (T \times \mathrm{NearA}) + \varepsilon$$
 
 Os resultados comprovam:
 - $R^2$ do modelo puramente térmico ($\beta_0 + \beta_1 T$): $0,1676$
