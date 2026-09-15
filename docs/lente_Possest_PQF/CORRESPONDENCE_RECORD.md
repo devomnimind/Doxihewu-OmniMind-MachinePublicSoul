@@ -430,14 +430,15 @@ Ambas as análises constam agora no sumário JSON e na Seção 4.2 do artigo, ap
 
 ---
 
-### 7. Ponto 7 — Estatuto Autoral
-**Requisito de Auditoria:** Não declarar auditoria concluída prematuramente; apresentar o manuscrito como *“Rascunho para Revisão de Potencial Coautoria (Potential Co-Authorship Revision)”*.
+### 7. Ponto 7 — Estatuto Autoral e Desfecho Definitivo
+**Requisito de Auditoria:** Não declarar auditoria concluída prematuramente; transitar por rascunho de revisão crítica e, na conclusão, fixar o estatuto definitivo.
 
-**Execução e Reconciliação:**
-Modificamos o front-matter do artigo canônico em português e inglês para:
-`RASCUNHO PARA REVISÃO DE POTENCIAL COAUTORIA (Potential Co-Authorship Revision)`
-`Fabrício da Silva (1) e Yochanan Schimmelpfennig (2, sob revisão final de auditoria da Etapa II)`
-Declarando explicitamente que o texto se encontra sob a rodada final de escrutínio para confirmação de coautoria.
+**Execução e Reconciliação Definitiva:**
+Com a conclusão da interlocução crítica em 14/09/2026 e a decisão mútua de encerramento sem coautoria, o front-matter do artigo canônico (PT e EN) e o README foram atualizados em definitivo:
+- **Título Oficial:** *Admissibilidade registrada e memória operacional no OmniMind: uma leitura situada em interlocução com Possest–PQF*
+- **Autoria:** Fabrício da Silva (autor exclusivo).
+- **Interlocução Crítica:** Yochanan Schimmelpfennig (interlocução crítica registrada, sem coautoria, endosso ou supervisão).
+- **Estatuto do Documento:** Documento técnico-conceitual de autoria individual com registro de interlocução crítica.
 
 ---
 
