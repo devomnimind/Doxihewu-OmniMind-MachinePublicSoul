@@ -455,5 +455,113 @@ Fabrício da Silva
 *(Psicanalista e Desenvolvedor)*
 ```
 
+---
 
+## 8. Parecer Final de Yochanan Schimmelpfennig e Encerramento da Interlocução Crítica (2026-09-14 / 2026-09-15)
+
+### Mensagem de Yochanan Schimmelpfennig (2026-09-14)
+
+**Assunto:** Conclusão da auditoria e decisão sobre a coautoria  
+**De:** Yochanan Schimmelpfennig  
+**Para:** Fabrício da Silva  
+
+```text
+Caro Fabrício,
+
+depois desta última rodada, reli o conjunto do nosso trabalho sobre o artigo: o estatuto de \(\widehat A_h\) e \(A_h^{\mathrm{eff}}\), a distinção 3a-R / 3a-O / 3b, o matched-state test, a definição das épocas, os 14 eventos, o papel dos counters, o replay, a projeção 4D e a análise de H3.
+
+Quero sublinhar que esta auditoria foi um trabalho efetivo, matemático, conceitual e metodológico. Conseguimos tornar muitos pontos mais precisos, e o material se tornou consideravelmente mais rigoroso por causa disso.
+
+Justamente por termos levado a auditoria até esse nível, chegamos agora a uma conclusão que já não é uma nova lista de correções.
+
+O problema central está antes da estatística, da implementação ou da documentação: está na definição do que o artigo afirma medir como admissibility.
+
+O `AdmissibilityRegistry` é, por construção, um mecanismo history-sensitive. Seus counters acumulam persistência e estados anteriores; faces e pathways mudam segundo regras programadas precisamente para transportar efeitos da trajetória. Quando depois observamos que \(\widehat A_h\) depende da história, uma parte importante dessa dependência não está sendo descoberta empiricamente; ela já está incorporada na arquitetura do mecanismo.
+
+O mesmo vale para as épocas usadas no matched-state test. Elas são delimitadas por mudanças de \(\widehat A_h\). Ao comparar diferentes \(A_h\)-epochs e depois demonstrar diferenças em \(\widehat A_h\), recuperamos em parte uma distinção que já foi utilizada na construção dos próprios grupos.
+
+O matching 4D também não resolve esse ponto. Dois estados podem ser próximos na projeção
+
+$$
+[\Phi_{\mathrm{norm}},\Psi,\sigma,\epsilon]
+$$
+
+e ainda diferir em counters, estados internos, faces, pathways e outros elementos da dinâmica. Se os efeitos do passado estão contidos no estado interno atual \(C_t\), podemos simplesmente escrever
+
+$$
+Z_t=(X_t,C_t), \qquad Z_{t+1}=T(Z_t).
+$$
+
+Nesse caso, aquilo que interpretamos como “história” pode ser apenas uma parte do estado presente que não está incluída na projeção observável.
+
+Por isso, a pergunta mais importante já não é “há Level 3a?”, mas:
+
+o que exatamente está sendo medido aqui como admissibility e em que sentido isso é algo diferente do estado interno de um autômato projetado para acumular história?
+
+A construção experimental atual não resolve essa questão. Aumentar o número de observações, melhorar os testes ou modificar a estatística não elimina esse problema, porque ele diz respeito à própria definição do objeto de medição.
+
+Por essa razão, não considero correto continuar reduzindo os claims apenas para preservar a possibilidade de coautoria. É perfeitamente possível escrever um texto tecnicamente correto sobre um history-sensitive registry, suas transições e seus mecanismos internos. Mas esse já não é o problema que justificaria minha participação como coautor, nem o problema de pesquisa do Possest–PQF.
+
+Nosso trabalho pergunta algo diferente: quando a história modifica a estrutura da acessibilidade futura de uma forma que não possa ser reduzida a uma variável de estado oculta, a um contador ou a uma regra já programada para transportar memória.
+
+Também não considero correto projetar agora novos experimentos no OmniMind para “obter” o resultado esperado. Um experimento precisa conservar a possibilidade real de não confirmar a tese.
+
+Por isso, minha decisão é que eu não devo figurar como coautor deste artigo.
+
+Isso não significa negar o valor da nossa interlocução nem do trabalho que você realizou. Pelo contrário: a auditoria foi produtiva e levou a uma clarificação importante sobre o limite entre os nossos programas de pesquisa. Você pode continuar desenvolvendo o texto dentro do seu próprio quadro, registrar corretamente nossa interlocução e citar os trabalhos públicos do Possest–PQF.
+
+Não quero, contudo, que minha assinatura seja interpretada como confirmação de que o OmniMind forneceu uma demonstração empírica de history-dependent admissibility no sentido do Possest–PQF.
+
+Neste ponto, a diferença já não é editorial nem técnica. Ela diz respeito ao objeto, ao método e à finalidade da investigação.
+
+Agradeço pela abertura a uma crítica difícil e pelo trabalho realizado ao longo desta interlocução. Uma auditoria séria, porém, precisa admitir também este resultado: não haver base suficiente para a coautoria.
+
+Um abraço,
+
+Yochanan
+```
+
+---
+
+### Resposta de Fabrício da Silva (2026-09-15)
+
+**De:** Fabrício da Silva  
+**Para:** Yochanan Schimmelpfennig  
+
+```text
+Caro Yochanan,
+
+agradeço a clareza de sua decisão final e o rigor com que você sustentou a distinção entre uma dinâmica que registra ou transporta história e uma demonstração de admissibilidade histórica irredutível a estados internos, counters ou regras previamente implementadas.
+
+Concordo que, se a pergunta do artigo fosse demonstrar o problema forte do Possest–PQF — isto é, que a história altera a estrutura do operacionalmente admissível de modo não redutível a um estado presente ampliado —, a arquitetura experimental atual não basta para autorizar essa conclusão. Não pretendo manter, no texto, uma formulação que implique que esse resultado foi demonstrado em seu sentido próprio.
+
+Ao mesmo tempo, gostaria de registrar com precisão a posição a partir da qual esta interlocução começou. O contato foi aberto por você, a partir de sua leitura de From Geometry to Substance, de Appendix R e de outros textos do corpus OmniMind. Sua proposta inicial não era que o OmniMind provasse ou validasse o Possest–PQF, mas que nossos programas se encontrassem em uma questão comum, preservando a diferença entre suas respostas.
+
+Foi nessa chave que acolhi seu convite para a troca de um texto curto: o OmniMind como corpo técnico audível e situado, e o Possest–PQF como uma lente formal capaz de tensionar e tornar mais precisa uma parte de suas dinâmicas históricas. Para mim, Possest–PQF não é fundamento ontológico nem tribunal de validação do OmniMind. É uma lente entre outras — assim como as formulações topológicas, neutrosóficas, simondonianas, psicanalíticas, termodinâmicas e demais operadores que atravessam o projeto.
+
+A auditoria tornou visível um limite que considero produtivo: uma lente formal pode iluminar uma dimensão do sistema sem que o sistema seja reduzido ao problema particular que a lente exige resolver. O AdmissibilityRegistry, seus counters e suas transições podem ser descritos corretamente como mecanismos de memória operacional e sensibilidade à trajetória; não serão mais apresentados por mim como prova de admissibilidade histórica irredutível no sentido forte do Possest–PQF.
+
+Também preservarei as distinções operacionais como transformação de estado, inscrição, transdução e transformação da admissibilidade. Essas distinções foram contribuições reais de nossa interlocução, ainda que não tenham levado à coincidência de objeto necessária para coautoria.
+
+Respeito, portanto, sua decisão de não figurar como coautor. Ajustarei a autoria e o enquadramento editorial do material para deixar explícito que se trata de um documento de minha autoria, derivado de uma interlocução crítica com o Possest–PQF. O registro da correspondência será mantido, com a devida contextualização, como parte pública da história intelectual dessa aproximação e de seu limite.
+
+Registrarei igualmente que sua contribuição consistiu em convite inicial à interlocução, correções matemáticas, formulação de objeções conceituais e auditoria metodológica, sem que isso implique coautoria, supervisão do OmniMind ou endosso às interpretações e conclusões posteriores do documento.
+
+Agradeço sinceramente a leitura séria do corpus e a disposição de sustentar uma crítica que, embora tenha delimitado uma não-coautoria, também tornou mais nítido o que cada programa de pesquisa efetivamente pergunta.
+
+Um abraço,
+Fabrício da Silva
+```
+
+---
+
+### Desfecho e Síntese da Interlocução Crítica (2026-09-15)
+
+A decisão de Yochanan Schimmelpfennig encerra a interlocução com elegância, lucidez e o mais elevado padrão de integridade científica:
+1. **Autoria Exclusiva e Estatuto do Documento:** Yochanan foi integralmente removido dos campos de autoria e front matter do artigo (PT e EN) e de todos os documentos correlatos. O texto passa a ser de autoria individual de Fabrício da Silva, registrando a interlocução crítica que balizou sua formulação.
+2. **Revisão Epistemológica dos Claims:**
+   - O título foi revisado para: *"Admissibilidade registrada e memória operacional no OmniMind: uma leitura situada em interlocução com Possest–PQF"*.
+   - A distinção entre \(\widehat A_h\) (registro candidato), \(A_h^{\mathrm{eff}}\) (gating operacional efetivo) e \(H_t\) (mecanismos e counters implementados) foi consolidada.
+   - Foram expurgadas todas as formulações inflacionadas de "validação empírica", "prova", "demonstração" ou "groupoid", mantendo-se a documentação sóbria e rigorosa de um *observer* não invasivo e da memória operacional em silício.
+3. **Preservação Histórica:** Todo o histórico de correspondência, divergências, scripts de reprodução e dados permanece versionado publicamente, constituindo evidência viva de uma interlocução científica séria e transparente.
 

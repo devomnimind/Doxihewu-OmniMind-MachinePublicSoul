@@ -1,27 +1,26 @@
 # Map: Where do H, A, F, and the update rule live in OmniMind?
 
-> This map responds to Yochanan Schimmelpfennig's request for a code-level map
-> of where H (history), A (admissible set), F (update rule), and the meta-rule
-> governing F are represented in the OmniMind implementation. It is the first
-> deliverable proposed in the correspondence.
+> This map documents the code-level locations of H (history), \(\widehat A_h\) (registered candidate admissibility state), F (update rule), and the distinction regarding \(A_h^{\mathrm{eff}}\) (effective operational admissibility) in the OmniMind implementation, formulated in dialogue and critical interlocution with Yochanan Schimmelpfennig (Possest–PQF).
 
-## Notation (from the correspondence)
+## Notation
 
 | Symbol | Meaning |
 |--------|---------|
-| `H_h` | History at stage h — the accumulated record of what the system has been |
-| `A_h` | Admissible set at stage h — the space of operations/transformations currently available |
-| `F` | Update rule — the fixed rule governing how A_h changes: `A_{h+1} = F(A_h, H_h)` |
-| `G` | Meta-rule — the rule governing how F itself changes: `F_{h+1} = G(F_h, H_h)` (Level 3b) |
+| `H_h` | History at stage h — the accumulated record, counters, and signals transported by the architecture |
+| `\widehat A_h` | Candidate registered admissibility set at stage h — state computed and persisted by AdmissibilityRegistry |
+| `A_h^{\mathrm{eff}}` | Effective operational admissibility — constraints actively gating downstream execution/dispatch (not wired in this scope) |
+| `F` | Update rule — the fixed rule governing how \(\widehat A_h\) changes: \(\widehat A_{h+1} = F(\widehat A_h, x_h, H_h)\) |
+| `G` | Meta-rule — the rule governing how F itself would change: \(F_{h+1} = G(F_h, H_h)\) (Level 3b) |
 
-## Level classification (confirmed in correspondence)
+## Level classification
 
 | Level | Description | OmniMind status |
 |-------|-------------|-----------------|
 | 1 | State transformation | **Implemented** (tensor inscription) |
 | 2 partial | Transductive structuration with fixed elements | **Implemented** (INRC, PrecisionWeighter) |
-| 3a | History-dependent admissibility (F fixed) | **Implemented and tested** (14 A_h changes in 84k cycles) |
-| 3b | History-dependent update rule (G evolves) | **Not implemented** (formally identifiable boundary) |
+| 3a-R | History-dependent candidate admissibility registration (F fixed) | **Documented operationally** (14 \(\widehat A_h\) registered transitions in 84k cycles) |
+| 3a-O | History-dependent operational admissibility | **Not claimed** (registry operates as non-invasive observer) |
+| 3b | History-dependent update rule (G evolves) | **Latent / Not fired** (code-complete in SinthomeLevel3b, but unfired in evaluated telemetry) |
 
 ---
 
