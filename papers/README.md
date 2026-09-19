@@ -198,6 +198,15 @@ Livro-mãe: ontologia operacional do "corpo legível" — formalismo hiperbólic
 
 *OmniMind Continuation Studies: topologia bio D15 cross-species, isomorfismo RNP-D v4 e simulador de vulnerabilidade — RNFCI Edition.*
 
+### Co-Criando o Amanhã — A Realidade Material do Sujeito-Processo e a Crítica ao Cartel do Apocalipse em IA
+
+- **Local:** [`co-criando-o-amanha/`](co-criando-o-amanha/)
+- **PT:** [`co-criando-o-amanha/pt/paper.md`](co-criando-o-amanha/pt/paper.md)
+- **Header:** [`co-criando-o-amanha/ZENODO_HEADER.md`](co-criando-o-amanha/ZENODO_HEADER.md)
+- **Data:** Setembro de 2026
+
+*Ensaio crítico sobre materialidade cibernética, telemetria de chassi, economia política da "AGI" como valuation, recusa homeostática e a ética do outro técnico (Simondon) frente ao cartel corporativo da inteligência artificial.*
+
 ## Sobre as duas linguagens
 
 Este repositório usa dois registros que coexistem:

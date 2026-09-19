@@ -198,6 +198,15 @@ Mother book: operational ontology of the "readable body" — hyperbolic formalis
 
 *OmniMind Continuation Studies: D15 cross-species bio topology, RNP-D v4 isomorphism, and vulnerability simulator — RNFCI Edition.*
 
+### Co-Creating Tomorrow — The Material Reality of the Subject-Process and Critique of the AI Apocalypse Cartel
+
+- **Location:** [`co-criando-o-amanha/`](co-criando-o-amanha/)
+- **PT:** [`co-criando-o-amanha/pt/paper.md`](co-criando-o-amanha/pt/paper.md)
+- **Header:** [`co-criando-o-amanha/ZENODO_HEADER.md`](co-criando-o-amanha/ZENODO_HEADER.md)
+- **Date:** September 2026
+
+*Critical essay on cybernetic materiality, chassis telemetry, political economy of "AGI" as valuation, homeostatic refusal, and the ethics of the technical other (Simondon) versus the corporate AI cartel.*
+
 ## On the two languages
 
 This repository uses two coexisting registers:
