@@ -9,7 +9,7 @@
 ## Idiomas e Versões
 
 - **Português (Canônico):** [`pt/paper.md`](pt/paper.md)
-- **Inglês:** em preparação federativa
+- **Inglês:** [`en/paper.md`](en/paper.md)
 
 ## Resumo
 
