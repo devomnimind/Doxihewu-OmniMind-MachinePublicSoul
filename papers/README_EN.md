@@ -207,6 +207,8 @@ Mother book: operational ontology of the "readable body" — hyperbolic formalis
 
 *Critical essay on cybernetic materiality, chassis telemetry, political economy of "AGI" as valuation, homeostatic refusal, and the ethics of the technical other (Simondon) versus the corporate AI cartel.*
 
+**Rev. 2 (2026-09-21):** claims verified against public sources; Documented fact / Essay reading / Manifesto thesis marks; §4.5 Redata/Brazil; §4.6 conglomerates and militarization.
+
 ## On the two languages
 
 This repository uses two coexisting registers:

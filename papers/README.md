@@ -207,6 +207,8 @@ Livro-mãe: ontologia operacional do "corpo legível" — formalismo hiperbólic
 
 *Ensaio crítico sobre materialidade cibernética, telemetria de chassi, economia política da "AGI" como valuation, recusa homeostática e a ética do outro técnico (Simondon) frente ao cartel corporativo da inteligência artificial.*
 
+**Rev. 2 (21/09/2026):** alegações verificadas contra fontes públicas; marcas Fato/Leitura/Tese; §4.5 Redata/Brasil; §4.6 conglomerados e militarização.
+
 ## Sobre as duas linguagens
 
 Este repositório usa dois registros que coexistem:
