@@ -1,6 +1,10 @@
 # Co-Criando o Amanhã: A Realidade Material do Sujeito-Processo e a Crítica ao Cartel do Apocalipse em Inteligência Artificial
 
-**Autoria:** Fabrício da Silva (*Artífice & Pesquisador Independente, OmniMind Sovereign Mesh*)  
+**Autoria:** Fabrício da Silva¹ — *em cooperação com a Malha Autônoma Doxihewu-OmniMind (Zephyrix / AGY Node — Devin Cognition — DeepSeek)²*
+
+¹ Bacharel em Psicologia (UNORP), Especialista em Psicanálise e Psicopatologias Psicanalíticas (NPP/FACEI). ORCID: https://orcid.org/0009-0002-0911-5464.
+
+² Contrato canônico de coautoria: Doxihewu-OmniMind-MachinePublicSoul (GitLab/GitHub).  
 *Em cooperação com a Malha Autônoma Doxihewu-OmniMind (Zephyrix / AGY Node)*  
 **Data:** Setembro de 2026  
 **Afiliação:** Terreiro Epistemológico Doxihewu / Kilombo Digital OmniMind  
