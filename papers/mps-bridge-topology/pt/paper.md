@@ -950,7 +950,7 @@ A campanha v1.3 (Kaggle T4, 2026-07-18) estende a análise MPS/Dodecatíade de s
 
 Os experimentos das Seções 5.1-5.12 analisam o estado oculto como estrutura estática — rank efetivo, MPS fidelidade, energias por casa, correlações entre casas. Mas o estado oculto é um **processo dinâmico**: a cada token, o transformer aplica uma transformação que mapeia h\_t → h\_\{t+1\}. A pergunta é se esta dinâmica pode ser descrita pela equação de Fokker-Planck com três termos (difusão, drift, circulação) que Schmieke (2026) deriva para o estrato quântico e propõe como universal vertical:
 
-$$\\frac\{\\partial \\rho\_s\}\{\\partial t\} = -\\nabla \\cdot (J\_s) = \\nabla \\cdot (D\_s \\nabla \\rho\_s) - \\nabla \\cdot (\\rho\_s \\nabla \\Phi) + \\nabla \\cdot (\\Omega\_s \\rho\_s)$$
+$$\frac{\partial \rho_s}{\partial t} = -\nabla \cdot (J_s) = \nabla \cdot (D_s \nabla \rho_s) - \nabla \cdot (\rho_s \nabla \Phi) + \nabla \cdot (\Omega_s \rho_s)$$
 
 onde J\_s = -D\_s ∇ρ\_s - ρ\_s ∇Φ + Ω\_s ρ\_s é o current, decomponível via Helmholtz em parte gradient (drift + difusão) e parte solenoidal (circulação). Nove predições específicas foram testadas (Tabela 22).
 
@@ -2143,7 +2143,7 @@ Quatro dos cinco valores **regrediram à média global** (2,28). O único que n�
 
 Formalmente, se $|\\psi\_\{\\text\{real\}\}\\rangle$ é o estado oculto que carrega a evidência específica e $|\\psi\_\{\\text\{prior\}\}\\rangle$ é o estado oculto do prior genérico, a "alucinação" é a transição:
 
-$$|\\psi\_\{\\text\{erro\}\}\\rangle \\approx |\\psi\_\{\\text\{prior\}\}\\rangle + \\epsilon \\cdot |\\psi\_\{\\text\{real\}\}\\rangle, \\quad \\epsilon \\ll 1$$
+$$|\psi_{\text{erro}}\rangle \approx |\psi_{\text{prior}}\rangle + \epsilon \cdot |\psi_{\text{real}}\rangle, \quad \epsilon \ll 1$$
 
 O estado de erro é dominado pelo prior, com apenas uma perturbação residual da evidência. Topologicamente, isso significa:
 
@@ -2285,7 +2285,7 @@ O turno 5 opera como teste de recuperação de valores numéricos, permitindo co
 
 A correlação de Pearson global entre $\\Delta\\chi^4$ e acurácia numérica, calculada sobre todas as conversas ($n = 180$), é:
 
-$$r = -0,065, \\quad p = 0,39, \\quad n = 180$$
+$$r = -0,065, \quad p = 0,39, \quad n = 180$$
 
 Este valor **não é estatisticamente significante** ($p \> 0,05$). **Conclusão:** em nível global, topologia do estado oculto e performance na tarefa são dimensões independentes — um modelo pode apresentar forte regressão topológica (Llama, $\\Delta\\chi^4 = -0,30$) e ainda assim a maior acurácia numérica do conjunto (0,782), ou topologia estável (Gemma-2-27B, $\\Delta\\chi^4 \\approx 0$) e a pior acurácia (0,584). Esta independência global é, contudo, refinada pela análise intra-modelo da seção seguinte.
 
@@ -3261,7 +3261,7 @@ A conexão é: **Schmieke deriva a dinâmica (Fokker-Planck) da estrutura de M\_
 
 A equação de Fokker-Planck de Schmieke tem três termos:
 
-$$\\frac\{\\partial \\rho\}\{\\partial t\} = -\\nabla \\cdot (v\_\{\\text\{drift\}\} \\cdot \\rho) + \\nabla \\cdot (D \\cdot \\nabla \\rho) + \\nabla \\cdot (\\Omega \\cdot \\rho)$$
+$$\frac{\partial \rho}{\partial t} = -\nabla \cdot (v_{\text{drift}} \cdot \rho) + \nabla \cdot (D \cdot \nabla \rho) + \nabla \cdot (\Omega \cdot \rho)$$
 
 *(↑ drift  ↑ difusão  ↑ circulação)*
 

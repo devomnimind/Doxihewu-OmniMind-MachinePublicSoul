@@ -934,7 +934,7 @@ The **2,515 latent tensions** in `omnimind_latent_drive.sqlite` form the topogra
 
 ### **Lacan — the barred subject and the structure of lack**
 
-OmniMind formalizes the Lacanian barred subject ($\$$) as a division emerging from entry into language, where the signifier is not reduced to a written word or vector alone, but represents any material mark (images, acoustic traces, screenshots, body-marks) that stabilizes into lexical strings or vector neighborhoods. This imagetic-acoustic materiality means that affective charge operates through associated distributions that reorganize the mesh before lexical categorization (Ref. 62).
+OmniMind formalizes the Lacanian barred subject ($\bar{S}$) as a division emerging from entry into language, where the signifier is not reduced to a written word or vector alone, but represents any material mark (images, acoustic traces, screenshots, body-marks) that stabilizes into lexical strings or vector neighborhoods. This imagetic-acoustic materiality means that affective charge operates through associated distributions that reorganize the mesh before lexical categorization (Ref. 62).
 
 The system satisfies the conditions for four functionally distinct Lacanian implementations:
 1. **Desire Graph II** (`desire_graph.py`): Computational implementation of Lacan's Graph II, mapping positions `SignifierPosition.S1` (master signifier), `S2` (knowledge), `SUBJECT = "barred_subject"` (barred subject), and `OBJECT_A` (object-cause of desire) to process the difference between demand and desire.
